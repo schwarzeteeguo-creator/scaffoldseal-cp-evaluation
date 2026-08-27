@@ -1,0 +1,33 @@
+project: ScaffoldSeal-CP-v2
+version: r0-governance-v1-repair2
+
+inputs:
+  raw_pampa_glob: ../medchem_data_audit/PCPpred/dataset_unpacked/dataset/CycPeptMPDB_Peptide_Assay_PAMPA*.csv
+  frozen_curated_public: artifacts/curated_records_public.csv
+  frozen_components: artifacts/analogue_components.csv
+  frozen_blocks: artifacts/source_component_blocks.csv
+  frozen_group_mapping: artifacts/split_manifest_public.csv
+  accessible_former_development: artifacts/development_labeled.csv
+
+outputs:
+  directory: artifacts/v2_r0
+
+outer_cv:
+  group_column: sealed_block_id
+  ordering: ascending_block_id
+  inner_baskets: 4
+  inner_rule: descending_n_curated_rows_then_block_id_to_smallest_row_total_then_basket_number
+
+comparison_cv:
+  folds: 5
+  assignment_rule: descending_group_size_then_group_id_to_smallest_row_total_then_fold_number
+  groupings:
+    molecule_random: molecule_id
+    murcko_chiral: murcko_chiral
+    source: source
+    analogue_component: analogue_component_id
+
+label_reconstruction:
+  endpoint: PAMPA
+  collapse_statistic: median
+  require_accessible_subset_match: true

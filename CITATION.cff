@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software or its released aggregate data, please cite it using the metadata below."
+title: "DMPNN Performance Estimates Diverge across Evaluation Boundaries in a Cyclic-Peptide Permeability Benchmark"
+type: software
+version: "0.7.0"
+authors:
+  - family-names: "Guo"
+    given-names: "Yutao"
+  - family-names: "Zhang"
+    given-names: "Zihan"
+  - family-names: "Zhao"
+    given-names: "Xuezhou"
+  - family-names: "Chen"
+    given-names: "Mengxi"
+  - family-names: "Wu"
+    given-names: "Dan"
+license: "MIT"

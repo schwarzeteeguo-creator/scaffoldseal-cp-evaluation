@@ -1,0 +1,3 @@
+arm,n_records,calibration_slope_observed_on_prediction,calibration_intercept,pearson_r,global_signed_bias,decile_weighted_absolute_calibration_error
+joint,6895,0.594955192655,-2.219150863864,0.325234801812,-0.174559797415,0.180844793154
+random,6895,0.963653859860,-0.207510055202,0.872924474399,-0.000977230971,0.026930919718

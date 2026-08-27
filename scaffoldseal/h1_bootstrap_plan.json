@@ -1,0 +1,56 @@
+{
+  "inputs": {
+    "assignments": {
+      "relative_path": "artifacts/v2_r0/outer_record_assignments.csv",
+      "sha256": "f655b5129bdd69485b3381e0f5d54693ac184b3f98f4e85ee93cd04e57cb5eb9",
+      "size_bytes": 854575
+    },
+    "labels": {
+      "relative_path": "artifacts/v2_r0/analysis_all_labels.csv",
+      "sha256": "d8679508392c943068e2797f30492d716cf0e20385e6f6f24fb5d642ff52981d",
+      "size_bytes": 2069887
+    },
+    "lobo_artifact_manifest": {
+      "relative_path": "artifacts/r1c0_d0_full_v1/metrics/joint_block_lobo/attempt_0001/artifact_manifest.json",
+      "sha256": "ed33ac095a49d92c8e58a1e2c5f4d8154289e41bb11080b0c64ff9e2a3dbd586",
+      "size_bytes": 1213
+    },
+    "lobo_predictions": {
+      "relative_path": "artifacts/r1c0_d0_full_v1/metrics/joint_block_lobo/attempt_0001/oof_predictions.csv",
+      "sha256": "e3e37d312fd4a5852106d397cc861fb3718dfafa467edb9e1039282b65afbcfe",
+      "size_bytes": 2293470
+    },
+    "random_artifact_manifest": {
+      "relative_path": "artifacts/h1_random_cv_d0_v1/metrics/molecule_random_5fold/attempt_0001/artifact_manifest.json",
+      "sha256": "09076d2316e9bbe9f6f7781f06899bc5bf8472abf013fcfe9c3f9a5b1d816b9e",
+      "size_bytes": 1214
+    },
+    "random_predictions": {
+      "relative_path": "artifacts/h1_random_cv_d0_v1/metrics/molecule_random_5fold/attempt_0001/oof_predictions.csv",
+      "sha256": "42ddf9641a81d31d55447446d1d1fe3e5da2c3b1f4015004d854174d57e81a6f",
+      "size_bytes": 2284726
+    }
+  },
+  "plan_sha256": "a0b5f472236af7e97a32c8d9bc2627042c88818c0fa4ac694a0c7c2d523887c4",
+  "rng": {
+    "algorithm": "numpy.PCG64",
+    "seed": 3882500157687503075,
+    "seed_derivation": "first 64 bits of SHA256(canonical seed material)",
+    "seed_material_sha256": "35e16952b35c98e3eb0893cdc07157859c2017e9d642d40ec45b083dac8cc3ee"
+  },
+  "runner": {
+    "relative_path": "src/h1_block_seed_bootstrap.py",
+    "sha256": "894ac1a4677d317e87c3b959ecd3c2a6085e0792d1d4a3b0266ff1b092334f97",
+    "size_bytes": 13429
+  },
+  "schema_version": "scaffoldseal-h1-block-seed-bootstrap-v1",
+  "scientific_rule": {
+    "block_integrity": "all rows and sources in each sampled block remain together; repeated block copies remain distinct",
+    "interval": "two-sided percentile 95%",
+    "replicates": 10000,
+    "resampling": "sample 18 outer blocks and 5 paired model seeds with replacement; use their Cartesian product",
+    "statistic": "LOBO source-macro MAE minus molecule-random source-macro MAE",
+    "support_ci_rule": "lower bound strictly above zero",
+    "support_point_threshold": 0.1
+  }
+}

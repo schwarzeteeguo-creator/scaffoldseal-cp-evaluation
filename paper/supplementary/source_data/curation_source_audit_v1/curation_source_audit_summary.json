@@ -1,0 +1,63 @@
+{
+  "schema_version": "scaffoldseal-curation-source-audit-v1",
+  "raw_file_sha256": "02da1cfc18a92b3ae6e70152445b23c05ce6bb0b6ed10fc7c9e141fbd9462fde",
+  "flow": {
+    "raw_rows": 7298,
+    "invalid_structure_or_sequence_rows": 0,
+    "censored_rows": 372,
+    "curated_source_structure_groups": 6895,
+    "curated_unique_molecules": 6862,
+    "curated_sources": 41,
+    "collapsed_groups": 31,
+    "excluded_raw_rows": 372,
+    "incompatible_groups": 0
+  },
+  "censoring": {
+    "sources_with_censored_rows": 23,
+    "median_source_censored_fraction_among_all_sources": 0.03901965747068253,
+    "maximum_source_censored_fraction": 1.0,
+    "maximum_fraction_source": "2018_Ramalho",
+    "maximum_fraction_source_raw_rows": 10,
+    "maximum_fraction_source_censored_rows": 10,
+    "censored_rows_linked_to_retained_groups": 2,
+    "censored_rows_without_retained_group": 370,
+    "note_classes": {
+      "database_assigned_or_reported_floor": 259,
+      "explicit_upper_limit": 40,
+      "no_reportable_value": 19,
+      "not_detected_or_below_lod": 9,
+      "other_detection_limit_note": 38,
+      "solubility_or_not_tested": 7
+    }
+  },
+  "structured_protocol_fields": {
+    "assay_pH": {
+      "available_as_structured_column": false,
+      "matching_columns": []
+    },
+    "membrane_composition": {
+      "available_as_structured_column": false,
+      "matching_columns": []
+    },
+    "incubation_time": {
+      "available_as_structured_column": false,
+      "matching_columns": []
+    },
+    "temperature": {
+      "available_as_structured_column": false,
+      "matching_columns": []
+    },
+    "donor_acceptor_conditions": {
+      "available_as_structured_column": false,
+      "matching_columns": []
+    },
+    "detection_limit_notes": {
+      "available_as_structured_column": true,
+      "matching_columns": [
+        "Detection_Limit_1",
+        "Detection_Limit_2"
+      ]
+    }
+  },
+  "interpretation_boundary": "The source table does not provide structured PAMPA pH, membrane-composition, incubation-time, temperature, or donor/acceptor-condition fields. Detection-limit notes are heterogeneous and include database-assigned floors, explicit upper limits, non-detection, missing reportable values, and solubility or non-testing failures. The database numeric values for these rows are therefore not treated as interchangeable quantitative censoring bounds."
+}

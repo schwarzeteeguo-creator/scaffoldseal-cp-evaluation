@@ -1,0 +1,419 @@
+{
+  "frozen_plan_sha256": "6b73097ee83c000a48ec4dfc646ddbcad3a561d3276c33e3661d3bf8b9d8f5c5",
+  "h2_condition4_90pct_coverage": 0.7702102973168963,
+  "h2_condition4_pass": false,
+  "h2_condition4_required_range_inclusive": [
+    0.85,
+    0.95
+  ],
+  "n_outer_prediction_slots": 34475,
+  "overall": [
+    {
+      "calibration_error": -0.058607686729514163,
+      "coverage": 0.44139231327048584,
+      "mean_interval_width_log10_papp": 1.022816456381823,
+      "n_prediction_rows": 34475,
+      "nominal_coverage": 0.5
+    },
+    {
+      "calibration_error": -0.12846990572878902,
+      "coverage": 0.671530094271211,
+      "mean_interval_width_log10_papp": 1.986849841276891,
+      "n_prediction_rows": 34475,
+      "nominal_coverage": 0.8
+    },
+    {
+      "calibration_error": -0.12978970268310375,
+      "coverage": 0.7702102973168963,
+      "mean_interval_width_log10_papp": 2.6137662757567464,
+      "n_prediction_rows": 34475,
+      "nominal_coverage": 0.9
+    }
+  ],
+  "per_fold": [
+    {
+      "coverage": 0.0625,
+      "mean_interval_width_log10_papp": 0.7689727115631104,
+      "n": 80,
+      "nominal_coverage": 0.5,
+      "outer_fold": 1
+    },
+    {
+      "coverage": 0.2625,
+      "mean_interval_width_log10_papp": 0.8403155159950249,
+      "n": 80,
+      "nominal_coverage": 0.5,
+      "outer_fold": 2
+    },
+    {
+      "coverage": 0.07325428194993412,
+      "mean_interval_width_log10_papp": 0.8460735893249524,
+      "n": 7590,
+      "nominal_coverage": 0.5,
+      "outer_fold": 3
+    },
+    {
+      "coverage": 0.0,
+      "mean_interval_width_log10_papp": 0.8541061449050904,
+      "n": 55,
+      "nominal_coverage": 0.5,
+      "outer_fold": 4
+    },
+    {
+      "coverage": 0.6871321695760598,
+      "mean_interval_width_log10_papp": 1.1470913004875187,
+      "n": 20050,
+      "nominal_coverage": 0.5,
+      "outer_fold": 5
+    },
+    {
+      "coverage": 0.13333333333333333,
+      "mean_interval_width_log10_papp": 0.8153517895936966,
+      "n": 15,
+      "nominal_coverage": 0.5,
+      "outer_fold": 6
+    },
+    {
+      "coverage": 0.035391923990498814,
+      "mean_interval_width_log10_papp": 0.847141096591949,
+      "n": 4210,
+      "nominal_coverage": 0.5,
+      "outer_fold": 7
+    },
+    {
+      "coverage": 0.8,
+      "mean_interval_width_log10_papp": 0.8461303448677062,
+      "n": 20,
+      "nominal_coverage": 0.5,
+      "outer_fold": 8
+    },
+    {
+      "coverage": 0.2777777777777778,
+      "mean_interval_width_log10_papp": 0.8773116350173952,
+      "n": 180,
+      "nominal_coverage": 0.5,
+      "outer_fold": 9
+    },
+    {
+      "coverage": 0.5333333333333333,
+      "mean_interval_width_log10_papp": 0.857892870903015,
+      "n": 90,
+      "nominal_coverage": 0.5,
+      "outer_fold": 10
+    },
+    {
+      "coverage": 0.29411764705882354,
+      "mean_interval_width_log10_papp": 0.8661340451240543,
+      "n": 85,
+      "nominal_coverage": 0.5,
+      "outer_fold": 11
+    },
+    {
+      "coverage": 0.1961904761904762,
+      "mean_interval_width_log10_papp": 0.9582638641677242,
+      "n": 525,
+      "nominal_coverage": 0.5,
+      "outer_fold": 12
+    },
+    {
+      "coverage": 0.22,
+      "mean_interval_width_log10_papp": 0.8297892856597909,
+      "n": 50,
+      "nominal_coverage": 0.5,
+      "outer_fold": 13
+    },
+    {
+      "coverage": 0.0,
+      "mean_interval_width_log10_papp": 0.9094834023714068,
+      "n": 40,
+      "nominal_coverage": 0.5,
+      "outer_fold": 14
+    },
+    {
+      "coverage": 0.3204819277108434,
+      "mean_interval_width_log10_papp": 0.8394387888908382,
+      "n": 1245,
+      "nominal_coverage": 0.5,
+      "outer_fold": 15
+    },
+    {
+      "coverage": 0.2222222222222222,
+      "mean_interval_width_log10_papp": 0.8514677369594559,
+      "n": 90,
+      "nominal_coverage": 0.5,
+      "outer_fold": 16
+    },
+    {
+      "coverage": 0.42857142857142855,
+      "mean_interval_width_log10_papp": 0.7952196025848381,
+      "n": 35,
+      "nominal_coverage": 0.5,
+      "outer_fold": 17
+    },
+    {
+      "coverage": 0.5714285714285714,
+      "mean_interval_width_log10_papp": 0.8603191220760348,
+      "n": 35,
+      "nominal_coverage": 0.5,
+      "outer_fold": 18
+    },
+    {
+      "coverage": 0.4,
+      "mean_interval_width_log10_papp": 1.9829495716094971,
+      "n": 80,
+      "nominal_coverage": 0.8,
+      "outer_fold": 1
+    },
+    {
+      "coverage": 0.5125,
+      "mean_interval_width_log10_papp": 1.7661948347091676,
+      "n": 80,
+      "nominal_coverage": 0.8,
+      "outer_fold": 2
+    },
+    {
+      "coverage": 0.5177865612648221,
+      "mean_interval_width_log10_papp": 2.3855605516638185,
+      "n": 7590,
+      "nominal_coverage": 0.8,
+      "outer_fold": 3
+    },
+    {
+      "coverage": 0.36363636363636365,
+      "mean_interval_width_log10_papp": 1.9425877600908272,
+      "n": 55,
+      "nominal_coverage": 0.8,
+      "outer_fold": 4
+    },
+    {
+      "coverage": 0.8614463840399003,
+      "mean_interval_width_log10_papp": 1.9440795636177055,
+      "n": 20050,
+      "nominal_coverage": 0.8,
+      "outer_fold": 5
+    },
+    {
+      "coverage": 0.4666666666666667,
+      "mean_interval_width_log10_papp": 1.8698101949691777,
+      "n": 15,
+      "nominal_coverage": 0.8,
+      "outer_fold": 6
+    },
+    {
+      "coverage": 0.07553444180522566,
+      "mean_interval_width_log10_papp": 1.543282690048217,
+      "n": 4210,
+      "nominal_coverage": 0.8,
+      "outer_fold": 7
+    },
+    {
+      "coverage": 1.0,
+      "mean_interval_width_log10_papp": 1.8197481632232662,
+      "n": 20,
+      "nominal_coverage": 0.8,
+      "outer_fold": 8
+    },
+    {
+      "coverage": 0.6777777777777778,
+      "mean_interval_width_log10_papp": 1.933809980750084,
+      "n": 180,
+      "nominal_coverage": 0.8,
+      "outer_fold": 9
+    },
+    {
+      "coverage": 0.7666666666666667,
+      "mean_interval_width_log10_papp": 1.7610613632202148,
+      "n": 90,
+      "nominal_coverage": 0.8,
+      "outer_fold": 10
+    },
+    {
+      "coverage": 0.7647058823529411,
+      "mean_interval_width_log10_papp": 1.8301735067367557,
+      "n": 85,
+      "nominal_coverage": 0.8,
+      "outer_fold": 11
+    },
+    {
+      "coverage": 0.4819047619047619,
+      "mean_interval_width_log10_papp": 1.965906460285186,
+      "n": 525,
+      "nominal_coverage": 0.8,
+      "outer_fold": 12
+    },
+    {
+      "coverage": 0.88,
+      "mean_interval_width_log10_papp": 2.056072590100708,
+      "n": 50,
+      "nominal_coverage": 0.8,
+      "outer_fold": 13
+    },
+    {
+      "coverage": 0.0,
+      "mean_interval_width_log10_papp": 1.8694606494903567,
+      "n": 40,
+      "nominal_coverage": 0.8,
+      "outer_fold": 14
+    },
+    {
+      "coverage": 0.6883534136546184,
+      "mean_interval_width_log10_papp": 1.822094926834106,
+      "n": 1245,
+      "nominal_coverage": 0.8,
+      "outer_fold": 15
+    },
+    {
+      "coverage": 0.4,
+      "mean_interval_width_log10_papp": 1.842474014759064,
+      "n": 90,
+      "nominal_coverage": 0.8,
+      "outer_fold": 16
+    },
+    {
+      "coverage": 0.8571428571428571,
+      "mean_interval_width_log10_papp": 2.0422395896911616,
+      "n": 35,
+      "nominal_coverage": 0.8,
+      "outer_fold": 17
+    },
+    {
+      "coverage": 1.0,
+      "mean_interval_width_log10_papp": 1.8678306984901436,
+      "n": 35,
+      "nominal_coverage": 0.8,
+      "outer_fold": 18
+    },
+    {
+      "coverage": 0.65,
+      "mean_interval_width_log10_papp": 2.7355539059638967,
+      "n": 80,
+      "nominal_coverage": 0.9,
+      "outer_fold": 1
+    },
+    {
+      "coverage": 0.7375,
+      "mean_interval_width_log10_papp": 2.5486891841888433,
+      "n": 80,
+      "nominal_coverage": 0.9,
+      "outer_fold": 2
+    },
+    {
+      "coverage": 0.7447957839262187,
+      "mean_interval_width_log10_papp": 3.3249546110630033,
+      "n": 7590,
+      "nominal_coverage": 0.9,
+      "outer_fold": 3
+    },
+    {
+      "coverage": 0.7454545454545455,
+      "mean_interval_width_log10_papp": 2.749973140954971,
+      "n": 55,
+      "nominal_coverage": 0.9,
+      "outer_fold": 4
+    },
+    {
+      "coverage": 0.9120199501246883,
+      "mean_interval_width_log10_papp": 2.471152320591401,
+      "n": 20050,
+      "nominal_coverage": 0.9,
+      "outer_fold": 5
+    },
+    {
+      "coverage": 0.7333333333333333,
+      "mean_interval_width_log10_papp": 2.6211683285236353,
+      "n": 15,
+      "nominal_coverage": 0.9,
+      "outer_fold": 6
+    },
+    {
+      "coverage": 0.10878859857482186,
+      "mean_interval_width_log10_papp": 1.9673394107818607,
+      "n": 4210,
+      "nominal_coverage": 0.9,
+      "outer_fold": 7
+    },
+    {
+      "coverage": 1.0,
+      "mean_interval_width_log10_papp": 2.492719333171845,
+      "n": 20,
+      "nominal_coverage": 0.9,
+      "outer_fold": 8
+    },
+    {
+      "coverage": 0.8722222222222222,
+      "mean_interval_width_log10_papp": 2.6649151420593262,
+      "n": 180,
+      "nominal_coverage": 0.9,
+      "outer_fold": 9
+    },
+    {
+      "coverage": 0.8888888888888888,
+      "mean_interval_width_log10_papp": 2.5928546047210688,
+      "n": 90,
+      "nominal_coverage": 0.9,
+      "outer_fold": 10
+    },
+    {
+      "coverage": 0.9529411764705882,
+      "mean_interval_width_log10_papp": 2.5805847203731527,
+      "n": 85,
+      "nominal_coverage": 0.9,
+      "outer_fold": 11
+    },
+    {
+      "coverage": 0.8,
+      "mean_interval_width_log10_papp": 2.755199983119965,
+      "n": 525,
+      "nominal_coverage": 0.9,
+      "outer_fold": 12
+    },
+    {
+      "coverage": 1.0,
+      "mean_interval_width_log10_papp": 3.128041431903838,
+      "n": 50,
+      "nominal_coverage": 0.9,
+      "outer_fold": 13
+    },
+    {
+      "coverage": 0.0,
+      "mean_interval_width_log10_papp": 2.6644008708000175,
+      "n": 40,
+      "nominal_coverage": 0.9,
+      "outer_fold": 14
+    },
+    {
+      "coverage": 0.8586345381526105,
+      "mean_interval_width_log10_papp": 2.6619605135917666,
+      "n": 1245,
+      "nominal_coverage": 0.9,
+      "outer_fold": 15
+    },
+    {
+      "coverage": 0.5222222222222223,
+      "mean_interval_width_log10_papp": 2.6482043504714965,
+      "n": 90,
+      "nominal_coverage": 0.9,
+      "outer_fold": 16
+    },
+    {
+      "coverage": 0.9714285714285714,
+      "mean_interval_width_log10_papp": 2.7876057815551754,
+      "n": 35,
+      "nominal_coverage": 0.9,
+      "outer_fold": 17
+    },
+    {
+      "coverage": 1.0,
+      "mean_interval_width_log10_papp": 2.543690223693847,
+      "n": 35,
+      "nominal_coverage": 0.9,
+      "outer_fold": 18
+    }
+  ],
+  "quantile_definition": "k=min(n,ceil((n+1)*level)); one-indexed upper order statistic",
+  "reconstruction_summary_sha256": "ace820855c3870283125eb52ce52a6fc84c97bde4236fdde569b29c48442c7a7",
+  "residuals_sha256": "08ccd80f3a890a1647eae91227da33a4969fc670960579054f471feea544129d",
+  "schema_version": "scaffoldseal-d3-empirical-interval-coverage-v1",
+  "status": "PASS",
+  "training_performed": false
+}

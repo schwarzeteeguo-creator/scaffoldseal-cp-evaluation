@@ -1,0 +1,78 @@
+{
+  "analysis_status": "post-confirmatory outcome-blind manifest freeze",
+  "assignment_rng": "numpy.PCG64",
+  "assignment_seed": 20260810,
+  "existing_boundary_fold_counts": {
+    "analogue_component_id_fold": {
+      "1": 3716,
+      "2": 1218,
+      "3": 654,
+      "4": 654,
+      "5": 653
+    },
+    "molecule_id_fold": {
+      "1": 1379,
+      "2": 1379,
+      "3": 1379,
+      "4": 1379,
+      "5": 1379
+    },
+    "source_fold": {
+      "1": 2866,
+      "2": 1518,
+      "3": 842,
+      "4": 835,
+      "5": 834
+    }
+  },
+  "files": [
+    {
+      "relative_path": "matched_size_random_record_assignments.csv",
+      "sha256": "7dfcc9dfd01759fe6a5cb80161fb1706b77031fe5ee44aa164c0348a74e4845d",
+      "size_bytes": 310762
+    },
+    {
+      "relative_path": "matched_size_random_outer_manifest.csv",
+      "sha256": "d19e581523d0b62a22860fe68d35dc32a15900b0e9c1e5bec95f34bd00d0d33e",
+      "size_bytes": 4610
+    },
+    {
+      "relative_path": "matched_size_random_inner_baskets.csv",
+      "sha256": "0a8a05da03ef14f463721d4d931471353ecdc89653a6e770adc823e2bff7be16",
+      "size_bytes": 3158
+    },
+    {
+      "relative_path": "evaluation_boundary_ladder_manifest.csv",
+      "sha256": "48d5f732e99f203c7a8a4f62c33c14e7f3ade552fd2734afa10d195a6456b785",
+      "size_bytes": 751659
+    }
+  ],
+  "input_sha256": {
+    "comparison_fold_manifest.csv": "b45d19a9b939a8a824842cf1aa20ef9a12383f9a329dd694bfeb9bf163d72b40",
+    "outer_record_assignments.csv": "f655b5129bdd69485b3381e0f5d54693ac184b3f98f4e85ee93cd04e57cb5eb9"
+  },
+  "matched_size_target_counts": [
+    16,
+    16,
+    1518,
+    11,
+    4010,
+    3,
+    842,
+    4,
+    36,
+    18,
+    17,
+    105,
+    10,
+    8,
+    249,
+    18,
+    7,
+    7
+  ],
+  "n_molecules": 6862,
+  "n_records": 6895,
+  "schema_version": "scaffoldseal-split-boundary-sensitivity-manifests-v1",
+  "training_or_tuning_performed": false
+}

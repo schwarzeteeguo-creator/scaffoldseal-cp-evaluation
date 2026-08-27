@@ -1,0 +1,6 @@
+analysis,model_or_comparison,estimand,value,lower_95_ci,upper_95_ci,decision,source_artifact
+H2,D1,source-macro MAE,0.904967313,,,secondary only,scaffoldseal/artifacts/d123_metrics_release_and_h2_verdict.md
+H2,D2,source-macro MAE,0.9708264821,,,secondary only,scaffoldseal/artifacts/d123_metrics_release_and_h2_verdict.md
+H2,D3,source-macro MAE,0.996878324,,,fixed candidate,scaffoldseal/artifacts/d123_metrics_release_and_h2_verdict.md
+H2,D0,source-macro MAE,1.0045590047,,,comparator,scaffoldseal/artifacts/d123_metrics_release_and_h2_verdict.md
+H2,nested-selected classical,source-macro MAE,0.9128248250270172,,,comparator,scaffoldseal/artifacts/r1c_nested_classical/metrics_summary.json

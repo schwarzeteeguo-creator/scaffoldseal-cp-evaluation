@@ -1,0 +1,7 @@
+censoring_note_class,rows,sources,fraction_of_censored_rows
+database_assigned_or_reported_floor,259,8,0.696236559139785
+explicit_upper_limit,40,11,0.10752688172043011
+no_reportable_value,19,2,0.051075268817204304
+not_detected_or_below_lod,9,4,0.024193548387096774
+other_detection_limit_note,38,2,0.10215053763440861
+solubility_or_not_tested,7,2,0.01881720430107527

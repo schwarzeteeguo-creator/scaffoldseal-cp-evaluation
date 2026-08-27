@@ -1,0 +1,4 @@
+tanimoto_threshold,joint_block_adjusted_rand_to_primary,joint_block_pairwise_jaccard_to_primary,n_primary_blocks_split,maximum_alternative_fragments_per_primary_block,n_alternative_blocks_merging_primary_blocks,maximum_primary_blocks_per_alternative_block,analogue_component_adjusted_rand_to_primary,analogue_component_pairwise_jaccard_to_primary
+0.700000000000,0.984564367024,0.981854115388,0,1,1,4,0.883288932963,0.859911512707
+0.800000000000,1.000000000000,1.000000000000,0,1,0,1,1.000000000000,1.000000000000
+0.900000000000,0.992085651924,0.990566868754,2,2,0,1,0.981174939127,0.974927733622

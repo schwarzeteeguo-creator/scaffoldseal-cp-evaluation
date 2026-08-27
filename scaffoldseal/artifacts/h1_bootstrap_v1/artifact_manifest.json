@@ -1,0 +1,17 @@
+{
+  "files": [
+    {
+      "relative_path": "bootstrap_replicates.csv",
+      "sha256": "b1be22516b10bf9ee47f2b56433a95013439c565ab1f05dd32435b58383a3a05",
+      "size_bytes": 621285
+    },
+    {
+      "relative_path": "bootstrap_summary.json",
+      "sha256": "a4f23f40d4b9745a377c29337e09ddbdb810b5d92b3b12ccc1701b58b46f2369",
+      "size_bytes": 591
+    }
+  ],
+  "files_sha256": "b16d8ba96e3eaf197d0669d52fe85ad7294de41be20c463e258509c6a9a56e2b",
+  "plan_sha256": "a0b5f472236af7e97a32c8d9bc2627042c88818c0fa4ac694a0c7c2d523887c4",
+  "schema_version": "scaffoldseal-bootstrap-artifacts-v1"
+}

@@ -1,0 +1,47 @@
+{
+  "analysis_status": "post-confirmatory descriptive diagnosis",
+  "calibration": [
+    {
+      "arm": "joint",
+      "calibration_intercept": -2.2191508638642232,
+      "calibration_slope_observed_on_prediction": 0.5949551926551399,
+      "decile_weighted_absolute_calibration_error": 0.1808447931538018,
+      "global_signed_bias": -0.17455979741478833,
+      "n_records": 6895,
+      "pearson_r": 0.32523480181245096
+    },
+    {
+      "arm": "random",
+      "calibration_intercept": -0.2075100552023134,
+      "calibration_slope_observed_on_prediction": 0.9636538598599322,
+      "decile_weighted_absolute_calibration_error": 0.026930919717910746,
+      "global_signed_bias": -0.0009772309706786652,
+      "n_records": 6895,
+      "pearson_r": 0.872924474399407
+    }
+  ],
+  "input_sha256": {
+    "assignments": "f655b5129bdd69485b3381e0f5d54693ac184b3f98f4e85ee93cd04e57cb5eb9",
+    "blocks": "0eba37d2f774704e9f54ffa0d3496bb5d9d75849aff50738f009492bddc0d4a9",
+    "joint": "e3e37d312fd4a5852106d397cc861fb3718dfafa467edb9e1039282b65afbcfe",
+    "labels": "d8679508392c943068e2797f30492d716cf0e20385e6f6f24fb5d642ff52981d",
+    "random": "42ddf9641a81d31d55447446d1d1fe3e5da2c3b1f4015004d854174d57e81a6f"
+  },
+  "n_blocks": 18,
+  "n_records": 6895,
+  "n_seeds": 5,
+  "n_sources": 41,
+  "schema_version": "scaffoldseal-h1-stratified-calibration-v1",
+  "source_absolute_bias": {
+    "joint_median": 0.577850566419863,
+    "joint_n_above_0_5": 23,
+    "random_median": 0.07840939571874006,
+    "random_n_above_0_5": 3
+  },
+  "source_gap_breadth": {
+    "n_positive_all_five_seeds": 28,
+    "n_positive_at_least_four_seeds": 36,
+    "n_positive_mean_gap": 38
+  },
+  "training_tuning_or_recalibration_performed": false
+}

@@ -1,0 +1,14 @@
+{
+  "accepted": true,
+  "authorized_runner_exact": {
+    "relative_path": "src/h1_random_cv_runner.py",
+    "sha256": "2e2b652964a9b4957fae110c05245ac1868df6aab465c370374efbe239084378",
+    "size_bytes": 199707
+  },
+  "candidate_manifest_relative_path": "h1_random_cv_manifest.json",
+  "candidate_manifest_sha256": "65584d66701bd0fa030f2575119eae3f88bbb54e89b7f19bcc1af1b174c3311c",
+  "candidate_plan_sha256": "088d58be9a809c93828f12b43d93cdd0d52ba5c81007933217e44a738197639f",
+  "execution_authorized": true,
+  "runner_scientific_sha256": "90cd9ce8f83419b0a7f80912a5e05773a77c37b1f0447739b8d6115aaaa643ac",
+  "schema_version": "scaffoldseal-h1-random-cv-external-acceptance-v1"
+}

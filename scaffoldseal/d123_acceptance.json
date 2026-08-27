@@ -1,0 +1,13 @@
+{
+  "accepted": true,
+  "execution_authorized": true,
+  "gpu_training_allowed": true,
+  "plan_file_sha256": "ccf3afa818cc6ee453a720f38a8342484986df6f5dbb4d7fffbaf7fd146c0a90",
+  "plan_relative_path": "d123_plan_candidate.json",
+  "plan_sha256": "6b73097ee83c000a48ec4dfc646ddbcad3a561d3276c33e3661d3bf8b9d8f5c5",
+  "protocol_lock_sha256": "61f795dab008dc572d7b196b8d197976ca8262e95ee9e9e54f6f8014564a355d",
+  "runner_file_sha256": "2d5d7c3de8a447164bce016feee0adf8b2e0c88d2fe3e5bca9a32f6f1ec35ba8",
+  "runner_relative_path": "src/d123_runner.py",
+  "schema_version": "scaffoldseal-d123-acceptance-v1",
+  "status": "AUTHORIZED_AFTER_CALLABLE_REPAIR_PASS_AND_USER_RESUME"
+}

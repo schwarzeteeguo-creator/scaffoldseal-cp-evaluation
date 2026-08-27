@@ -1,0 +1,21 @@
+{
+  "files": [
+    {
+      "relative_path": "raw_descriptors.csv",
+      "sha256": "2c0e0e8422f0b27b8a11e49c5c4ccb70aee197e7ec229df4ec1d654e96fb7ca3",
+      "size_bytes": 1245171
+    },
+    {
+      "relative_path": "group_metadata.csv",
+      "sha256": "fdfda5c9bf714fed03adf56272fa63f78c2a6ce4060942ccf4bfb6205008205a",
+      "size_bytes": 536926
+    },
+    {
+      "relative_path": "provenance.json",
+      "sha256": "88ee4d6b4e035f04d508be811ef65e8185503dfc5f926a7094e7924499847700",
+      "size_bytes": 1706
+    }
+  ],
+  "files_sha256": "6aaf7fabc1dccfa4e8f2140246f7e9b5c28011769b4693c9d685bd12243be9e3",
+  "schema_version": "scaffoldseal-d123-input-manifest-v1"
+}

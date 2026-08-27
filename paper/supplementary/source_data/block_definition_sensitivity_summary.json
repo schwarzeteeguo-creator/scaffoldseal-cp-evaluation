@@ -1,0 +1,106 @@
+{
+  "analysis_status": "post-confirmatory outcome-blind geometry sensitivity",
+  "fixed_rules": {
+    "ecfp_bits": 2048,
+    "ecfp_radius": 2,
+    "include_chirality": true,
+    "molecular_weight_ratio": [
+      0.8,
+      1.25
+    ],
+    "source_provenance_closure": true,
+    "token_rule": "exact one-token edit at unchanged topology and ring length"
+  },
+  "input_sha256": {
+    "config": "b2b93411877452dad428544bd08c7f97a58bd6e0d2a87f10105b79896d31392d",
+    "curated_records_public": "6f712f0eaf4a4ebbebf39fa3fa72a42209dd1679c452eeac3c933cb4805268f3",
+    "graph_builder": "c3b049c51b9ce639721786bdca4fb06aad602bab883c78da9c74a5e5dc18bdac",
+    "primary_split_manifest": "dbfba5ef076ed74d068691603ae5f21da6d6600d2e8b2fdc2654adc8decface0"
+  },
+  "model_training_or_performance_rescoring_performed": false,
+  "partition_comparison_to_primary_0_80": [
+    {
+      "analogue_component_adjusted_rand_to_primary": 0.883288932963168,
+      "analogue_component_pairwise_jaccard_to_primary": 0.85991151270738,
+      "joint_block_adjusted_rand_to_primary": 0.9845643670235606,
+      "joint_block_pairwise_jaccard_to_primary": 0.9818541153882533,
+      "maximum_alternative_fragments_per_primary_block": 1,
+      "maximum_primary_blocks_per_alternative_block": 4,
+      "n_alternative_blocks_merging_primary_blocks": 1,
+      "n_primary_blocks_split": 0,
+      "tanimoto_threshold": 0.7
+    },
+    {
+      "analogue_component_adjusted_rand_to_primary": 1.0,
+      "analogue_component_pairwise_jaccard_to_primary": 1.0,
+      "joint_block_adjusted_rand_to_primary": 1.0,
+      "joint_block_pairwise_jaccard_to_primary": 1.0,
+      "maximum_alternative_fragments_per_primary_block": 1,
+      "maximum_primary_blocks_per_alternative_block": 1,
+      "n_alternative_blocks_merging_primary_blocks": 0,
+      "n_primary_blocks_split": 0,
+      "tanimoto_threshold": 0.8
+    },
+    {
+      "analogue_component_adjusted_rand_to_primary": 0.981174939127374,
+      "analogue_component_pairwise_jaccard_to_primary": 0.9749277336217892,
+      "joint_block_adjusted_rand_to_primary": 0.9920856519241026,
+      "joint_block_pairwise_jaccard_to_primary": 0.9905668687540026,
+      "maximum_alternative_fragments_per_primary_block": 2,
+      "maximum_primary_blocks_per_alternative_block": 1,
+      "n_alternative_blocks_merging_primary_blocks": 0,
+      "n_primary_blocks_split": 2,
+      "tanimoto_threshold": 0.9
+    }
+  ],
+  "schema_version": "scaffoldseal-block-definition-sensitivity-v1",
+  "threshold_summary": [
+    {
+      "effective_number_of_blocks": 2.4350396494683877,
+      "largest_block_records": 4054,
+      "largest_block_share": 0.587962291515591,
+      "median_block_records": 18.0,
+      "n_analogue_components": 91,
+      "n_ecfp4_edges": 647699,
+      "n_exact_one_token_edit_edges": 29900,
+      "n_joint_blocks": 15,
+      "n_source_groups": 41,
+      "n_total_analogue_edges": 648106,
+      "tanimoto_threshold": 0.7,
+      "top_three_block_share": 0.9302393038433647
+    },
+    {
+      "effective_number_of_blocks": 2.480026022497013,
+      "largest_block_records": 4010,
+      "largest_block_share": 0.5815808556925308,
+      "median_block_records": 16.5,
+      "n_analogue_components": 305,
+      "n_ecfp4_edges": 134290,
+      "n_exact_one_token_edit_edges": 29900,
+      "n_joint_blocks": 18,
+      "n_source_groups": 41,
+      "n_total_analogue_edges": 141425,
+      "tanimoto_threshold": 0.8,
+      "top_three_block_share": 0.9238578680203046
+    },
+    {
+      "effective_number_of_blocks": 2.5036346419518916,
+      "largest_block_records": 3988,
+      "largest_block_share": 0.5783901377810007,
+      "median_block_records": 17.5,
+      "n_analogue_components": 745,
+      "n_ecfp4_edges": 15612,
+      "n_exact_one_token_edit_edges": 29900,
+      "n_joint_blocks": 20,
+      "n_source_groups": 41,
+      "n_total_analogue_edges": 38787,
+      "tanimoto_threshold": 0.9,
+      "top_three_block_share": 0.9206671501087744
+    }
+  ],
+  "thresholds": [
+    0.7,
+    0.8,
+    0.9
+  ]
+}

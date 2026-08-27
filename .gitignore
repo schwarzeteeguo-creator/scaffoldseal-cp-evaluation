@@ -1,0 +1,51 @@
+# Local environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Credentials and machine-specific configuration
+.env
+.env.*
+config.yaml
+*credential*
+*secret*
+
+# Raw, row-level, and internal experiment material
+runs/
+**/runs/
+*final_labels*
+*development_labeled*
+*analysis_all_labels*
+*curated_records_public.csv
+*split_manifest_public.csv
+*oof_predictions*
+*residuals*.csv
+*interval_rows.csv
+
+# Large generated or model artifacts
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.gzip
+*.log
+*.tif
+*.tiff
+
+# Local legacy copies retained only for comparison; never stage for v0.7 release
+paper/manuscript_v0.6.md
+paper/supplementary/supporting_information_v0.5.md
+paper/supplementary/supporting_information_v0.6.md
+paper/pdf/*v0.6.pdf
+paper/figures/output/figure1_evaluation_schematic.*
+paper/figures/output/figure2_main_results.*
+docs/RELEASE_INVENTORY_V0.6.md
+
+# Operating-system/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

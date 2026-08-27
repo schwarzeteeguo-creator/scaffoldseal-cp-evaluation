@@ -1,0 +1,43 @@
+{
+  "analysis_status": "post-confirmatory zero-training sensitivity analysis",
+  "cr1_cluster_robust_t_interval": {
+    "ci_high": 0.6969890615767003,
+    "ci_low": 0.37769236041097254,
+    "critical_value": 2.1098155778333156,
+    "degrees_of_freedom": 17,
+    "estimate": 0.5373407109938364,
+    "standard_error": 0.07566933918784285,
+    "t_statistic": 7.101168277152952
+  },
+  "delete_one_block_jackknife": {
+    "ci_high": 0.6967570967903404,
+    "ci_low": 0.37792432519733243,
+    "degrees_of_freedom": 17,
+    "estimate": 0.5373407109938364,
+    "maximum_delete_one_estimate": 0.5522871654320722,
+    "minimum_delete_one_estimate": 0.4724310493732986,
+    "standard_error": 0.07555939366047212
+  },
+  "exhaustive_block_sign_flip": {
+    "n_assignments": 262144,
+    "n_blocks": 18,
+    "n_two_sided_exceedances": 4,
+    "observed_mean_gap": 0.5373407109938364,
+    "two_sided_p_value": 1.52587890625e-05
+  },
+  "input_sha256": {
+    "assignments": "f655b5129bdd69485b3381e0f5d54693ac184b3f98f4e85ee93cd04e57cb5eb9",
+    "blocks": "0eba37d2f774704e9f54ffa0d3496bb5d9d75849aff50738f009492bddc0d4a9",
+    "joint": "e3e37d312fd4a5852106d397cc861fb3718dfafa467edb9e1039282b65afbcfe",
+    "labels": "d8679508392c943068e2797f30492d716cf0e20385e6f6f24fb5d642ff52981d",
+    "random": "42ddf9641a81d31d55447446d1d1fe3e5da2c3b1f4015004d854174d57e81a6f"
+  },
+  "mean_gap": 0.5373407109938364,
+  "n_blocks": 18,
+  "n_records": 6895,
+  "n_seeds": 5,
+  "n_sources": 41,
+  "positive_blocks": 17,
+  "schema_version": "scaffoldseal-h1-small-cluster-sensitivity-v1",
+  "training_or_tuning_performed": false
+}

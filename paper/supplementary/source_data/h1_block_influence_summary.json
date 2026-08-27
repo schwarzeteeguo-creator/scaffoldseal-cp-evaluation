@@ -1,0 +1,40 @@
+{
+  "analysis_status": "post-confirmatory descriptive robustness analysis",
+  "headline_source_macro": {
+    "gap": 0.5373407109938364,
+    "joint": 1.00455900469197,
+    "random": 0.46721829369813345
+  },
+  "input_sha256": {
+    "assignments": "f655b5129bdd69485b3381e0f5d54693ac184b3f98f4e85ee93cd04e57cb5eb9",
+    "blocks": "0eba37d2f774704e9f54ffa0d3496bb5d9d75849aff50738f009492bddc0d4a9",
+    "joint": "e3e37d312fd4a5852106d397cc861fb3718dfafa467edb9e1039282b65afbcfe",
+    "labels": "d8679508392c943068e2797f30492d716cf0e20385e6f6f24fb5d642ff52981d",
+    "random": "42ddf9641a81d31d55447446d1d1fe3e5da2c3b1f4015004d854174d57e81a6f"
+  },
+  "leave_one_block_out": {
+    "maximum_gap": 0.552287165432072,
+    "minimum_gap": 0.4724310493732986,
+    "n_of_18_at_least_0_10": 18
+  },
+  "n_blocks": 18,
+  "n_records": 6895,
+  "n_seeds": 5,
+  "n_sources": 41,
+  "schema_version": "scaffoldseal-h1-descriptive-block-influence-v1",
+  "top_three_simultaneous_omission": {
+    "gap_at_least_0_10": true,
+    "gap_joint_minus_random": 0.5334808665118169,
+    "joint_source_macro_mae": 1.0108914430265319,
+    "omitted_block_ids": [
+      "BLOCK-513383ed86a73488",
+      "BLOCK-4494eb5738fce47c",
+      "BLOCK-5c361cba45039733"
+    ],
+    "random_source_macro_mae": 0.47741057651471497,
+    "remaining_blocks": 15,
+    "remaining_records": 525,
+    "remaining_sources": 19
+  },
+  "training_or_tuning_performed": false
+}

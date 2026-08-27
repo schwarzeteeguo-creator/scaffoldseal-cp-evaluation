@@ -1,0 +1,19 @@
+{
+  "gap_percentile_95_ci": {
+    "lower": 0.32436739522417257,
+    "upper": 0.7530427419165402
+  },
+  "h1_supported": true,
+  "n_replicates": 10000,
+  "plan_sha256": "a0b5f472236af7e97a32c8d9bc2627042c88818c0fa4ac694a0c7c2d523887c4",
+  "point_estimates": {
+    "gap_lobo_minus_random": 0.5373407109938364,
+    "lobo_source_macro_mae": 1.00455900469197,
+    "random_source_macro_mae": 0.46721829369813345
+  },
+  "schema_version": "scaffoldseal-h1-block-seed-bootstrap-v1",
+  "support_rules": {
+    "ci_entirely_above_zero": true,
+    "point_gap_at_least_0_10": true
+  }
+}

@@ -1,0 +1,13 @@
+/.gitattributes text eol=lf
+/src/d0_full_runner.py text eol=lf
+/src/d0_fold_scoped_governance.py text eol=lf
+/tests/test_d0_full_runner.py text eol=lf
+/d0_full_run_manifest.json text eol=lf
+/d0_full_run_acceptance.json text eol=lf
+/R1C0_DMPNN_FULL_RUNNER_REPAIR1_REPORT.md text eol=lf
+/R1C0_DMPNN_FULL_RUNNER_REPAIR2_REPORT.md text eol=lf
+/LIVE_PROGRESS.md text eol=lf
+/artifacts/d0_full_run/LIVE_STATUS.json text eol=lf
+/artifacts/d0_full_run/CURRENT.json text eol=lf
+/artifacts/d0_full_run/status_generations/** text eol=lf
+/artifacts/v2_r0/d0_full_runner_repair1/** text eol=lf

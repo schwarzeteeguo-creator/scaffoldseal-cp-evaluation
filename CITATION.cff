@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software or its released aggregate data, please cite it using the metadata below."
 title: "DMPNN Performance Estimates Diverge across Evaluation Boundaries in a Cyclic-Peptide Permeability Benchmark"
 type: software
-version: "0.7.5"
+version: "0.7.6"
 authors:
   - family-names: "Guo"
     given-names: "Yutao"
@@ -14,6 +14,10 @@ authors:
     given-names: "Mengxi"
   - family-names: "Wu"
     given-names: "Dan"
+  - family-names: "Zhang"
+    given-names: "Langzhe"
+  - family-names: "Meng"
+    given-names: "Xiangyu"
 license: "MIT"
 repository-code: "https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation"
 url: "https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation"

@@ -7,7 +7,9 @@
     {"name": "Zhang, Zihan", "affiliation": "International College of Pharmaceutical Innovation, Soochow University"},
     {"name": "Zhao, Xuezhou", "affiliation": "International College of Pharmaceutical Innovation, Soochow University"},
     {"name": "Chen, Mengxi", "affiliation": "International College of Pharmaceutical Innovation, Soochow University"},
-    {"name": "Wu, Dan", "affiliation": "International College of Pharmaceutical Innovation, Soochow University"}
+    {"name": "Wu, Dan", "affiliation": "International College of Pharmaceutical Innovation, Soochow University"},
+    {"name": "Zhang, Langzhe", "affiliation": "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"},
+    {"name": "Meng, Xiangyu", "affiliation": "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"}
   ],
   "keywords": ["cyclic peptides", "permeability", "chemical machine learning", "benchmarking", "evaluation design", "reproducibility"],
   "license": "MIT",

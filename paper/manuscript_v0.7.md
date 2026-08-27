@@ -1,6 +1,6 @@
 # DMPNN Performance Estimates Diverge across Evaluation Boundaries in a Cyclic-Peptide Permeability Benchmark
 
-**Yutao Guo<sup>1,2</sup>, Zihan Zhang<sup>1,2</sup>, Xuezhou Zhao<sup>1,2</sup>, Mengxi Chen<sup>1,2</sup>, Dan Wu<sup>1,3,*</sup>**  
+**Yutao Guo<sup>1,2</sup>, Zihan Zhang<sup>1,2</sup>, Xuezhou Zhao<sup>1,2</sup>, Mengxi Chen<sup>1,2</sup>, Dan Wu<sup>1,3,*</sup>, Langzhe Zhang<sup>1,2</sup>, Xiangyu Meng<sup>1,2</sup>**  
 <sup>1</sup>International College of Pharmaceutical Innovation, Soochow University, Suzhou 215123, China  
 <sup>2</sup>School of Pharmacy and Biomolecular Sciences, RCSI, 123 St Stephen's Green, Dublin 2, D02 VY51, Ireland  
 <sup>3</sup>Department of Chemistry, RCSI, 123 St Stephen's Green, Dublin 2, D02 YN77, Ireland  
@@ -239,7 +239,7 @@ Supporting Information: detailed curation, modelling, validation and reproducibi
 
 ## Author Contributions
 
-Yutao Guo: Conceptualization, Methodology, Software, Formal Analysis, Investigation, Visualization, Writing - Original Draft. Zihan Zhang: Methodology, Software, Data Curation. Xuezhou Zhao: Data Curation, Validation, Formal Analysis. Mengxi Chen: Validation, Visualization, Writing - Review & Editing. Dan Wu: Conceptualization, Supervision, Project Administration, Funding Acquisition, Writing - Review & Editing. All authors read and approved the final manuscript.
+Yutao Guo: Conceptualization, Methodology, Software, Formal Analysis, Investigation, Visualization, Writing - Original Draft. Zihan Zhang: Methodology, Software, Data Curation. Xuezhou Zhao: Data Curation, Validation, Formal Analysis. Mengxi Chen: Validation, Visualization, Writing - Review & Editing. Dan Wu: Conceptualization, Supervision, Project Administration, Funding Acquisition, Writing - Review & Editing. Langzhe Zhang: Software, Data Curation, Validation. Xiangyu Meng: Methodology, Visualization, Validation. All authors read and approved the final manuscript.
 
 ## Acknowledgments
 

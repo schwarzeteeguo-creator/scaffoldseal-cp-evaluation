@@ -2,7 +2,7 @@
 
 ## DMPNN Performance Estimates Diverge across Evaluation Boundaries in a Cyclic-Peptide Permeability Benchmark
 
-**Authors:** Yutao Guo<sup>1,2</sup>, Zihan Zhang<sup>1,2</sup>, Xuezhou Zhao<sup>1,2</sup>, Mengxi Chen<sup>1,2</sup>, Dan Wu<sup>1,3,*</sup>
+**Authors:** Yutao Guo<sup>1,2</sup>, Zihan Zhang<sup>1,2</sup>, Xuezhou Zhao<sup>1,2</sup>, Mengxi Chen<sup>1,2</sup>, Dan Wu<sup>1,3,*</sup>, Langzhe Zhang<sup>1,2</sup>, Xiangyu Meng<sup>1,2</sup>
 
 **Affiliations:** <sup>1</sup>International College of Pharmaceutical Innovation, Soochow University, Suzhou 215123, China; <sup>2</sup>School of Pharmacy and Biomolecular Sciences, RCSI, 123 St Stephen's Green, Dublin 2, D02 VY51, Ireland; <sup>3</sup>Department of Chemistry, RCSI, 123 St Stephen's Green, Dublin 2, D02 YN77, Ireland. <sup>*</sup>Corresponding author: danwu@suda.edu.cn
 

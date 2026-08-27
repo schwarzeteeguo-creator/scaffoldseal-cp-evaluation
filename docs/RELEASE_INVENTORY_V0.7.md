@@ -14,9 +14,9 @@ This inventory maps manuscript and Supporting Information claims to the cleaned 
 | `paper/figures/` | Deterministic figure code, source tables and PDF/PNG/SVG assets | Included; TIFF generated locally and excluded from Git | Figs. 1-4 |
 | `scaffoldseal/src/`, `tests/`, configs | Split-safe runners, governance checks and fixed configuration | Included | Model and integrity methods |
 | `docs/BASELINE_ENVIRONMENT.txt` | Upstream repository, exact commit and training environment | Included | Reproducibility methods |
-| `data/README.md`, `DATA_ACCESS.md` | Exact raw hash, schema, redistribution boundary and reconstruction instructions | Included; stable official acquisition URL still pending | Data Availability and Table S9 |
+| `data/README.md`, `DATA_ACCESS.md` | Exact raw hash, official acquisition route, redistribution boundary and reconstruction instructions | Included; upstream row-level reuse licence not identified, so raw records remain excluded | Data Availability and Table S9 |
 | `SHA256SUMS` | File-level hashes for the cleaned candidate | Regenerated after final PDF build | Release integrity |
-| `CITATION.cff`, `LICENSE` | Final authors, identifiers and reuse terms | Templates/placeholders only; blocking author action | Archive metadata |
+| `CITATION.cff`, `LICENSE`, `NOTICE.md` | Author list, citation metadata and reuse terms | Included; the archive DOI is added only after Zenodo publication | Archive metadata |
 
 ## Deliberately excluded
 
@@ -34,6 +34,5 @@ This inventory maps manuscript and Supporting Information claims to the cleaned 
 ## Public-release blockers
 
 1. GitHub release URL and archival DOI.
-2. Author names, affiliations, CRediT, funding, conflicts and ORCIDs.
-3. Code/data/documentation license decisions.
-4. Verification of the stable official acquisition route and upstream redistribution terms.
+2. Completion of all authors' confirmation of names, affiliations, CRediT, funding and conflicts.
+3. Upstream redistribution licence remains unidentified; raw records must remain excluded unless explicit permission is obtained.

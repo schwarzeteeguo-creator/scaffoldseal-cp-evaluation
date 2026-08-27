@@ -6,9 +6,9 @@ The study uses PAMPA permeability records from CycPeptMPDB v1.2. The source arti
 
 > Li et al. CycPeptMPDB: A Comprehensive Database of Membrane Permeability of Cyclic Peptides. *Journal of Chemical Information and Modeling* (2023). https://doi.org/10.1021/acs.jcim.2c01573
 
-That article DOI identifies the source publication; it is not asserted here to be a dataset DOI or accession. Obtain the records from the database or authors' official distribution route and comply with their terms. This candidate does not redistribute the row-level records while redistribution rights remain unconfirmed.
+That article DOI identifies the source publication; it is not asserted here to be a dataset DOI or accession. The source article identifies the official download page as http://cycpeptmpdb.com/download/. Neither the source article nor the database catalogue located a separate reuse or redistribution licence for the downloaded records. Obtain the records from the official page and comply with its terms. This release does not redistribute the row-level records.
 
-The file used for the frozen analysis was locally named `CycPeptMPDB_Peptide_Assay_PAMPA (5).csv`, contained 7,298 rows, and had SHA-256 `02da1cfc18a92b3ae6e70152445b23c05ce6bb0b6ed10fc7c9e141fbd9462fde`. The parenthetical suffix reflects a local browser-download name and is not a database accession. Before public release, replace this paragraph's general acquisition wording with a verified stable official download URL or author-supplied access instruction; do not substitute the article DOI as if it were the dataset URL.
+The file used for the frozen analysis was locally named `CycPeptMPDB_Peptide_Assay_PAMPA (5).csv`, contained 7,298 rows, and had SHA-256 `02da1cfc18a92b3ae6e70152445b23c05ce6bb0b6ed10fc7c9e141fbd9462fde`. The parenthetical suffix reflects a local browser-download name and is not a database accession. The official download page is recorded above; do not substitute the article DOI as if it were the dataset URL.
 
 ## Materials included here
 
@@ -46,6 +46,6 @@ The resulting summary must report 7,298 raw rows, 372 excluded detection-limit r
 
 Replace the bracketed fields only after the release exists:
 
-> This study reused CycPeptMPDB v1.2 PAMPA records described in the source publication (https://doi.org/10.1021/acs.jcim.2c01573). The exact 7,298-row input had SHA-256 02da1cfc18a92b3ae6e70152445b23c05ce6bb0b6ed10fc7c9e141fbd9462fde. To avoid redistributing third-party records beyond confirmed permissions, the public repository provides acquisition and deterministic reconstruction instructions, release-safe curation and split manifests, aggregate analysis outputs, figure source data and reporting code. These materials are available in the GitHub release at [GITHUB RELEASE URL] and in the persistent archive at [ZENODO DOI].
+> This study reused CycPeptMPDB v1.2 PAMPA records from http://cycpeptmpdb.com/download/, as described in the source publication (https://doi.org/10.1021/acs.jcim.2c01573). The exact 7,298-row input had SHA-256 02da1cfc18a92b3ae6e70152445b23c05ce6bb0b6ed10fc7c9e141fbd9462fde. The authors do not redistribute upstream structures or permeability labels because a redistribution licence has not been identified. The release-safe archive provides deterministic reconstruction instructions, curation and split manifests, aggregate analysis outputs, figure source data and reporting code at [GITHUB RELEASE URL] and [ZENODO DOI].
 
 If the upstream licence is later confirmed to permit redistribution, document the licence and exact source version before adding any row-level data.

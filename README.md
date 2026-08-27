@@ -1,6 +1,6 @@
 # ScaffoldSeal-CP Evaluation
 
-This folder is the cleaned **v0.7 GitHub release package** for the manuscript *DMPNN Performance Estimates Diverge across Evaluation Boundaries in a Cyclic-Peptide Permeability Benchmark*. It is ready for initial GitHub publication and later Zenodo archiving.
+This folder is the cleaned **v0.7 GitHub release package** for the manuscript *DMPNN Performance Estimates Diverge across Evaluation Boundaries in a Cyclic-Peptide Permeability Benchmark*. It is prepared for formal GitHub Release publication and subsequent Zenodo archiving.
 
 Suggested repository name: `scaffoldseal-cp-evaluation`.
 

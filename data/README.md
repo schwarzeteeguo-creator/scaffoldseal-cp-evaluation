@@ -8,7 +8,9 @@ The upstream PAMPA table is not redistributed while its reuse terms remain unres
 - Rows: 7,298
 - SHA-256: `02da1cfc18a92b3ae6e70152445b23c05ce6bb0b6ed10fc7c9e141fbd9462fde`
 - Source publication: https://doi.org/10.1021/acs.jcim.2c01573
-- Stable official acquisition URL: **pending verification before public release**
+- Official acquisition URL: http://cycpeptmpdb.com/download/
+
+The source publication identifies this page as the database download route. A separate reuse or redistribution licence for the row-level records was not identified, so the records are not redistributed in this release.
 
 ## Release-safe curation manifest
 

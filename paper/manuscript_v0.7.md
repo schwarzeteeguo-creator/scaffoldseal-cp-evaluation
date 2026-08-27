@@ -243,11 +243,11 @@ Supporting Information: detailed curation, modelling, validation and reproducibi
 
 ## Acknowledgments
 
-This work was supported by the Jiangsu Tepin Foundation (Z241922) and the Health Research Board (ILP-PHR-2024-014).
+This work was supported by the Jiangsu Tepin Foundation (Z241922) and the Health Research Board (ILP-PHR-2024-014). The authors thank the International College of Pharmaceutical Innovation, Soochow University, for providing computational resources.
 
 ## Conflict of Interest
 
-The authors declare **[no competing financial interest / statement to be supplied]**.
+The authors declare no competing financial interest.
 
 ## References
 

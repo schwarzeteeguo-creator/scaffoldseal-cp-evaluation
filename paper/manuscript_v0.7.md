@@ -239,7 +239,7 @@ Supporting Information: detailed curation, modelling, validation and reproducibi
 
 ## Author Contributions
 
-**[CRediT roles and author initials to be supplied.]**
+Yutao Guo: Conceptualization, Methodology, Software, Formal Analysis, Investigation, Visualization, Writing - Original Draft. Zihan Zhang: Methodology, Software, Data Curation. Xuezhou Zhao: Data Curation, Validation, Formal Analysis. Mengxi Chen: Validation, Visualization, Writing - Review & Editing. Dan Wu: Conceptualization, Supervision, Project Administration, Funding Acquisition, Writing - Review & Editing. All authors read and approved the final manuscript.
 
 ## Acknowledgments
 

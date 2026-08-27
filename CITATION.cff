@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this software or its released aggregate data, please cite it using the metadata below."
 title: "DMPNN Performance Estimates Diverge across Evaluation Boundaries in a Cyclic-Peptide Permeability Benchmark"
 type: software
-version: "0.7.3"
+version: "0.7.4"
 authors:
   - family-names: "Guo"
     given-names: "Yutao"

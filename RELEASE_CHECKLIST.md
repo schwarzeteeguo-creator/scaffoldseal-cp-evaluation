@@ -4,7 +4,7 @@ Do not make this repository public until the blocking items below are resolved.
 
 ## Blocking author decisions
 
-- [ ] Confirm the repository owner and final repository name.
+- [x] Public repository created: `schwarzeteeguo-creator/scaffoldseal-cp-evaluation`.
 - [x] Author names and affiliations have been entered in citation and Zenodo metadata. Add ORCID identifiers later if available.
 - [ ] Confirm that every included source file can be publicly released.
 - [ ] Confirm the upstream CycPeptMPDB redistribution terms; keep row-level records excluded unless permission is explicit.
@@ -25,7 +25,7 @@ Do not make this repository public until the blocking items below are resolved.
 
 ## Publication sequence
 
-- [ ] Create the GitHub repository and commit this folder's contents as the repository root.
+- [x] Create the GitHub repository and commit this folder's contents as the repository root.
 - [ ] Connect the repository to Zenodo before creating the archival release.
 - [ ] Create an initial tagged GitHub release, for example `v0.1.0`.
 - [ ] Confirm that Zenodo archived the release and issued a DOI.

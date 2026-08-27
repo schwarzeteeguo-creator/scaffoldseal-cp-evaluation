@@ -12,6 +12,7 @@
   "keywords": ["cyclic peptides", "permeability", "chemical machine learning", "benchmarking", "evaluation design", "reproducibility"],
   "license": "MIT",
   "related_identifiers": [
+    {"identifier": "https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation", "relation": "isSupplementTo", "resource_type": "software"},
     {"identifier": "https://doi.org/10.1021/acs.jcim.2c01573", "relation": "isDerivedFrom", "resource_type": "publication-article"}
   ]
 }

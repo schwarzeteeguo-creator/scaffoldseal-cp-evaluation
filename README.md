@@ -43,10 +43,10 @@ The H1 robustness and D3 coverage reconstruction scripts require excluded, local
 
 ## Public-release sequence
 
-1. Create the GitHub repository `scaffoldseal-cp-evaluation` and upload this folder's contents as its root.
+1. The public repository is [schwarzeteeguo-creator/scaffoldseal-cp-evaluation](https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation).
 2. Confirm upstream redistribution terms and retain the current exclusion boundary unless permission is explicit.
 3. Create a tagged GitHub release from the uploaded commit.
 4. Archive that exact release with Zenodo or an equivalent repository.
-5. Add the public GitHub release URL and Zenodo DOI to the manuscript and `CITATION.cff` only after they resolve publicly.
+5. Add the Zenodo DOI to the manuscript and `CITATION.cff` only after it resolves publicly.
 
-Until step 6, local hashes are described as internal freeze evidence, not as independently time-stamped public preregistration.
+Until the archival release is created, local hashes are described as internal freeze evidence, not as independently time-stamped public preregistration.

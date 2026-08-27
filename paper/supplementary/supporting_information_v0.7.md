@@ -124,7 +124,7 @@ Primary report identifiers: Geylan et al., DOI 10.1039/D4DD00056K; CycPeptMP, DO
 | 2026-08-09 | D123 sealed audit and one controlled metric release | Decisions D-052 to D-054 and H2 verdict report |
 | 2026-08-10 | Zero-training sensitivity analyses and split-boundary completion plan frozen | Reporting scripts, input hashes and post-confirmatory internal freeze |
 
-**Table S7 | Protocol and release timeline.** The complete chronology, file hashes and distinction between an internal freeze and an independently time-stamped public preregistration are provided in `PUBLIC_PROTOCOL_TIMELINE.md`. The manuscript must use the following unresolved fields until deposition: **[GitHub release URL pending]** and **[Zenodo DOI pending]**. Local hashes alone are not described as independent public preregistration.
+**Table S7 | Protocol and release timeline.** The complete chronology, file hashes and distinction between an internal freeze and an independently time-stamped public preregistration are provided in `PUBLIC_PROTOCOL_TIMELINE.md`. The public repository is **https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation**; the remaining unresolved archival field is **[Zenodo DOI pending]**. Local hashes alone are not described as independent public preregistration.
 
 ### Itemized Supporting Information and release mapping
 

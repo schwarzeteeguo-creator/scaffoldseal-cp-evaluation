@@ -32,7 +32,7 @@ These hashes identify the retained local files. They should be cross-checked aft
 
 | Resource | Status | DOI/URL field for manuscript |
 |---|---|---|
-| Source-code repository | Release candidate prepared locally; not yet public | `[GitHub release URL pending]` |
+| Source-code repository | Public repository prepared; create a tagged release before archival deposition | `https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation` |
 | Versioned archival snapshot | Deposit after author/license review | `[Zenodo DOI pending]` |
 | Upstream CycPeptMPDB data | Source publication identified; stable table-acquisition route and redistribution terms require verification | Article DOI `https://doi.org/10.1021/acs.jcim.2c01573`; exact raw SHA-256 in `DATA_ACCESS.md` |
 | Maintained baseline code | Pinned upstream repository/commit documented in manuscript | `[upstream repository URL and commit]` |

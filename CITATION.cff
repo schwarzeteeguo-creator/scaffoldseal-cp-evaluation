@@ -1,23 +1,40 @@
 cff-version: 1.2.0
-message: "If you use this software or its released aggregate data, please cite it using the metadata below."
+message: "If you use this software, please cite the archived release described in this file."
 title: "DMPNN Performance Estimates Diverge across Evaluation Boundaries in a Cyclic-Peptide Permeability Benchmark"
 type: software
-version: "0.7.7"
-authors:
-  - family-names: "Guo"
-    given-names: "Yutao"
-  - family-names: "Zhang"
-    given-names: "Zihan"
-  - family-names: "Zhao"
-    given-names: "Xuezhou"
-  - family-names: "Chen"
-    given-names: "Mengxi"
-  - family-names: "Zhang"
-    given-names: "Langzhe"
-  - family-names: "Meng"
-    given-names: "Xiangyu"
-  - family-names: "Wu"
-    given-names: "Dan"
-license: "MIT"
+version: 0.8.0
+license: MIT
 repository-code: "https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation"
-url: "https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation"
+
+authors:
+  - family-names: Guo
+    given-names: Yutao
+    affiliation: "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"
+
+  - family-names: Jiang
+    given-names: Xujing
+    affiliation: "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"
+
+  - family-names: Zhang
+    given-names: Zihan
+    affiliation: "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"
+
+  - family-names: Zhao
+    given-names: Xuezhou
+    affiliation: "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"
+
+  - family-names: Chen
+    given-names: Mengxi
+    affiliation: "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"
+
+  - family-names: Zhang
+    given-names: Langzhe
+    affiliation: "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"
+
+  - family-names: Meng
+    given-names: Xiangyu
+    affiliation: "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"
+
+  - family-names: Wu
+    given-names: Dan
+    affiliation: "International College of Pharmaceutical Innovation, Soochow University; Department of Chemistry, RCSI"

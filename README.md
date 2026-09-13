@@ -1,52 +1,91 @@
 # ScaffoldSeal-CP Evaluation
 
-This folder is the cleaned **v0.7 GitHub release package** for the manuscript *DMPNN Performance Estimates Diverge across Evaluation Boundaries in a Cyclic-Peptide Permeability Benchmark*. It is prepared for formal GitHub Release publication and subsequent Zenodo archiving.
+Release-ready repository for the manuscript *DMPNN Performance Estimates Diverge across Evaluation Boundaries in a Cyclic-Peptide Permeability Benchmark*, prepared for submission to the *Journal of Cheminformatics*.
 
-Suggested repository name: `scaffoldseal-cp-evaluation`.
+This directory is intended to be copied **as the repository root** for release `v0.8.0`. Its contents are directly browsable; the repository is not distributed only as a nested ZIP archive.
 
-## Included
+## Repository map
 
-- `paper/manuscript_v0.7.md` and `paper/supplementary/supporting_information_v0.7.md`.
-- Separate manuscript and Supporting Information PDFs plus a combined review PDF under `paper/pdf/`.
-- Main and supplementary figure code, release-safe source tables, and PDF/PNG/SVG assets. This includes the ACS Table-of-Contents graphic under `paper/figures/output/`. Large TIFF submission assets are generated locally and deliberately excluded from Git.
-- Frozen version-2 governance files, protocol timeline, split-boundary sensitivity preregistration, manifest-freeze record, and release inventory under `docs/`.
-- Split-safe evaluation/training code, tests, selected aggregate artifacts, and outcome-blind split manifests under `scaffoldseal/`.
-- Post-confirmatory H1 robustness scripts, the release-safe curation/source audit, D3 coverage stratification, and machine-readable aggregate/source-level outputs.
-- Exact release-safe joint and molecule-grouped fold assignments plus the outcome-blind source-only, analogue-only and matched-size manifests.
+- `code/`: task-oriented map of the public curation, splitting, evaluation, analysis and figure code.
+- `configs/`: map of frozen configuration and dependency records.
+- `manifests/`: map of release-safe curation, fold-assignment and evaluation-boundary manifests.
+- `results/`: map of aggregate results and figure source data.
+- `docs/`: preregistration, governance, provenance, release inventory and reproducibility instructions.
+- `paper/manuscript/`: Journal of Cheminformatics main-manuscript PDF and editable LaTeX source.
+- `paper/supporting_information/`: Supporting Information PDF, LaTeX source and supplementary figures.
+- `paper/complete_review/`: combined manuscript-plus-SI PDF for internal review.
+- `scaffoldseal/src/`: canonical executable analysis and evaluation modules.
+- `scaffoldseal/tests/`: automated tests.
+- `scaffoldseal/artifacts/`: selected release-safe manifests and aggregate outputs.
+- `paper/figures/` and `paper/supplementary/`: canonical reporting scripts, source tables and figures.
 
-## Not included
+The `code/`, `configs/`, `manifests/` and `results/` directories are navigation layers. Canonical files remain in their validated locations so that existing commands and imports are not broken.
 
-This candidate does not redistribute the upstream row-level CycPeptMPDB table, molecular structures, permeability labels, per-record predictions or residuals, model weights, caches, private vaults, credentials, or machine-specific runtime directories. See `DATA_ACCESS.md`.
+## Data and redistribution boundary
 
-## Licence and citation
+The study reused CycPeptMPDB v1.2 PAMPA records. This repository does not redistribute upstream molecular structures, row-level permeability labels, per-record predictions, residuals, model weights, credentials, caches or private run directories because a separate redistribution licence for the upstream records was not identified.
 
-The authors' original repository content is released under the MIT licence; its scope and third-party exclusions are stated in `LICENSE` and `NOTICE.md`. Citation metadata is provided in `CITATION.cff`. The repository-level Zenodo metadata is in `.zenodo.json`.
+The exact locally used upstream file contained 7,298 rows and had SHA-256:
 
-## Scientific status
+```text
+02da1cfc18a92b3ae6e70152445b23c05ce6bb0b6ed10fc7c9e141fbd9462fde
+```
 
-The accepted H1 and H2 results are frozen. The v0.7 revision makes the training-size confound explicit, audits heterogeneous censoring and absent structured assay-condition fields, stratifies D3 coverage without treating seed slots as independent, records uncompleted protocol arms, and narrows the title and causal wording.
+See `DATA_ACCESS.md` and `data/README.md` for the access route, curation counts, released column dictionary and reconstruction boundary.
 
-The size-profile-matched random, source-only, and analogue-only D0 analyses are post-confirmatory. Their scientific plan and outcome-blind manifests are frozen, but model results are not yet included and cannot revise H1 or H2.
+## Publicly included material
 
-## Reproduce release-safe figures and checks
+- Deterministic curation and split code.
+- Frozen governance and protocol records.
+- Release-safe record and curated-group manifests without structures or endpoint values.
+- Joint, molecule-grouped, source-only, analogue-only and matched-size split manifests.
+- Aggregate benchmark, robustness, calibration and uncertainty outputs.
+- Figure source-data tables and deterministic figure-generation code.
+- Journal of Cheminformatics manuscript and Supporting Information files.
+- File-level SHA-256 checksums.
+
+## Environment
+
+For release-safe curation, reporting and tests:
+
+```bash
+conda env create -f environment.yml
+conda activate scaffoldseal-cp
+```
+
+Alternatively:
 
 ```bash
 python -m venv .venv
-python -m pip install -r requirements-reporting.txt
-python paper/figures/make_main_figures.py
-python paper/figures/make_toc_graphic.py
+python -m pip install -r requirements.txt
+```
+
+The reproduced upstream DMPNN baseline used a separate pinned environment documented in `docs/BASELINE_ENVIRONMENT.txt`.
+
+## Verify the public package
+
+```bash
 python scripts/verify_release.py
 python scripts/generate_checksums.py --check
 ```
 
-The H1 robustness and D3 coverage reconstruction scripts require excluded, locally reconstructed OOF artifacts. Set `SCAFFOLDSEAL_RUNTIME_ROOT` to an authorized runtime root before running those scripts. Aggregate figure inputs and released audit outputs do not require private row-level prediction files. The pinned training environment and upstream commit are documented in `docs/BASELINE_ENVIRONMENT.txt`; `requirements-reporting.txt` covers only public reporting figures.
+## Rebuild the release-safe figures
 
-## Public-release sequence
+```bash
+python paper/figures/make_main_figures.py
+```
 
-1. The public repository is [schwarzeteeguo-creator/scaffoldseal-cp-evaluation](https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation).
-2. Confirm upstream redistribution terms and retain the current exclusion boundary unless permission is explicit.
-3. Create a tagged GitHub release from the uploaded commit.
-4. Archive that exact release with Zenodo or an equivalent repository.
-5. Add the Zenodo DOI to the manuscript and `CITATION.cff` only after it resolves publicly.
+Some post-confirmatory reconstruction scripts require excluded, locally reconstructed out-of-fold artifacts. Those scripts identify the required authorized runtime input and do not imply that private row-level predictions are part of this release.
 
-Until the archival release is created, local hashes are described as internal freeze evidence, not as independently time-stamped public preregistration.
+## Citation and archive status
+
+- Repository: https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation
+- All-version Zenodo Concept DOI: https://doi.org/10.5281/zenodo.22126299
+- Previous immutable `v0.7.7` record: https://doi.org/10.5281/zenodo.22126300
+- Exact `v0.8.0` DOI: pending creation of the GitHub `v0.8.0` release.
+
+Do not reuse or move an existing tag. After Zenodo archives `v0.8.0`, cite the newly minted version-specific DOI in the submitted manuscript and update `CITATION.cff` on the default branch without moving the archived tag.
+
+## Licence
+
+The authors' original code, documentation, figures, aggregate tables and release manifests are provided under the MIT License. This licence does not apply to third-party CycPeptMPDB records or external software. See `LICENSE` and `NOTICE.md`.

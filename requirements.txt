@@ -1,0 +1,2 @@
+-r scaffoldseal/requirements.txt
+-r requirements-reporting.txt

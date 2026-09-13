@@ -1,8 +1,9 @@
-"""Check that the candidate contains only the intended public release material."""
+"""Audit the public v0.8.0 release candidate."""
 
 from __future__ import annotations
 
 import csv
+import json
 import re
 import sys
 from pathlib import Path
@@ -17,35 +18,57 @@ REQUIRED = {
     "CITATION.cff",
     ".zenodo.json",
     "NOTICE.md",
+    "requirements.txt",
     "requirements-reporting.txt",
-    "paper/manuscript_v0.7.md",
-    "paper/supplementary/supporting_information_v0.7.md",
-    "paper/pdf/ScaffoldSeal_CP_manuscript_submission_draft_v0.7.pdf",
-    "paper/pdf/ScaffoldSeal_CP_supporting_information_v0.7.pdf",
-    "paper/pdf/ScaffoldSeal_CP_complete_review_package_v0.7.pdf",
+    "environment.yml",
+    "code/README.md",
+    "code/curation/README.md",
+    "code/splitting/README.md",
+    "code/evaluation/README.md",
+    "code/analysis/README.md",
+    "code/figures/README.md",
+    "configs/README.md",
+    "manifests/README.md",
+    "results/README.md",
+    "docs/REPRODUCIBILITY.md",
+    "docs/RELEASE_INVENTORY_V0.8.md",
+    "docs/RELEASE_NOTES_v0.8.0.md",
     "docs/PUBLIC_PROTOCOL_TIMELINE.md",
     "docs/SPLIT_BOUNDARY_SENSITIVITY_PREREGISTRATION.md",
     "docs/SPLIT_BOUNDARY_MANIFEST_FREEZE.md",
-    "paper/references.bib",
+    "paper/manuscript/manuscript_jcheminform_v1.0.tex",
+    "paper/manuscript/ScaffoldSeal_CP_JCheminform_manuscript_v1.0.pdf",
+    "paper/manuscript/references.bib",
+    "paper/supporting_information/supporting_information_jcheminform_v1.0.tex",
+    "paper/supporting_information/ScaffoldSeal_CP_JCheminform_supporting_information_v1.0.pdf",
+    "paper/complete_review/ScaffoldSeal_CP_JCheminform_complete_review_package_v1.0.pdf",
     "paper/figures/make_main_figures.py",
     "paper/figures/output/figure1_study_workflow.png",
     "paper/figures/output/figure2_evidence_geometry.png",
     "paper/figures/output/figure3_main_results.png",
     "paper/figures/output/figure4_failure_heterogeneity.png",
     "paper/supplementary/analyze_curation_source_audit.py",
-    "paper/supplementary/analyze_d3_coverage_stratification.py",
     "paper/supplementary/source_data/curation_source_audit_v1/curation_manifest_release_safe.csv",
     "paper/supplementary/source_data/curation_source_audit_v1/curated_group_manifest_release_safe.csv",
-    "paper/supplementary/source_data/d3_coverage_stratification_v1/d3_coverage_aggregation_sensitivity.csv",
     "scaffoldseal/artifacts/v2_r0/outer_record_assignments.csv",
     "scaffoldseal/artifacts/h1_random_cv_r0/outer_record_assignments.csv",
     "scaffoldseal/artifacts/split_boundary_sensitivity_v1/evaluation_boundary_ladder_manifest.csv",
     "data/README.md",
-    "docs/RELEASE_INVENTORY_V0.7.md",
     "scaffoldseal/config_v2.yaml",
     "docs/BASELINE_ENVIRONMENT.txt",
 }
-FORBIDDEN_SUFFIXES = {".pt", ".pth", ".ckpt", ".npy", ".npz", ".gzip", ".log", ".pyc", ".tif", ".tiff"}
+FORBIDDEN_SUFFIXES = {
+    ".pt",
+    ".pth",
+    ".ckpt",
+    ".npy",
+    ".npz",
+    ".gzip",
+    ".log",
+    ".pyc",
+    ".tif",
+    ".tiff",
+}
 FORBIDDEN_NAME_FRAGMENTS = {
     "final_labels",
     "development_labeled",
@@ -66,13 +89,36 @@ RISKY_CSV_FIELDS = {
     "residual",
     "raw_ids",
 }
-TEXT_SUFFIXES = {".md", ".txt", ".yaml", ".yml", ".json", ".csv", ".py", ".bib", ".cff", ".template", ".gitignore"}
+TEXT_SUFFIXES = {
+    ".md",
+    ".txt",
+    ".yaml",
+    ".yml",
+    ".json",
+    ".csv",
+    ".py",
+    ".bib",
+    ".cff",
+    ".template",
+    ".gitignore",
+    ".tex",
+}
 LEAK_PATTERNS = {
     "Windows user path": re.compile(r"[A-Za-z]:[\\/]Users[\\/][^\\/\s]+", re.IGNORECASE),
     "Unix home path": re.compile(r"/home/[^/\s]+/"),
     "private key": re.compile(r"-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----"),
     "sealed-label vault path": re.compile(r"final_labels_sealed", re.IGNORECASE),
 }
+EXPECTED_CREATORS = [
+    "Guo, Yutao",
+    "Jiang, Xujing",
+    "Zhang, Zihan",
+    "Zhao, Xuezhou",
+    "Chen, Mengxi",
+    "Zhang, Langzhe",
+    "Meng, Xiangyu",
+    "Wu, Dan",
+]
 
 
 def all_files() -> list[Path]:
@@ -88,6 +134,7 @@ def all_files() -> list[Path]:
 
 def main() -> int:
     errors: list[str] = []
+    warnings: list[str] = []
     files = all_files()
 
     for relative in sorted(REQUIRED):
@@ -105,7 +152,9 @@ def main() -> int:
         if path.stat().st_size > 10 * 1024 * 1024:
             errors.append(f"file exceeds 10 MiB release limit: {relative}")
 
-        if (path.suffix.lower() in TEXT_SUFFIXES or path.name == ".gitignore") and path != Path(__file__).resolve():
+        if (
+            path.suffix.lower() in TEXT_SUFFIXES or path.name == ".gitignore"
+        ) and path != Path(__file__).resolve():
             try:
                 text = path.read_text(encoding="utf-8")
             except UnicodeDecodeError:
@@ -124,7 +173,45 @@ def main() -> int:
                 continue
             risky = sorted({field.strip().lower() for field in header} & RISKY_CSV_FIELDS)
             if risky:
-                errors.append(f"risky row-level CSV fields in {relative}: {', '.join(risky)}")
+                errors.append(
+                    f"risky row-level CSV fields in {relative}: {', '.join(risky)}"
+                )
+
+    try:
+        zenodo = json.loads((ROOT / ".zenodo.json").read_text(encoding="utf-8"))
+    except (OSError, UnicodeDecodeError, json.JSONDecodeError) as exc:
+        errors.append(f"invalid .zenodo.json: {exc}")
+    else:
+        creators = [item.get("name") for item in zenodo.get("creators", [])]
+        if creators != EXPECTED_CREATORS:
+            errors.append(f"Zenodo creator order mismatch: {creators}")
+        if zenodo.get("version") != "0.8.0":
+            errors.append("Zenodo version must be 0.8.0")
+
+    citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
+    if 'version: "0.8.0"' not in citation:
+        errors.append("CITATION.cff version must be 0.8.0")
+    citation_positions = [citation.find(name.split(", ")[0]) for name in EXPECTED_CREATORS]
+    if any(position < 0 for position in citation_positions):
+        errors.append("CITATION.cff is missing one or more family names")
+
+    manuscript_release_text = "\n".join(
+        [
+            (ROOT / "paper/manuscript/manuscript_jcheminform_v1.0.tex").read_text(
+                encoding="utf-8"
+            ),
+            (ROOT / "paper/manuscript/references.bib").read_text(encoding="utf-8"),
+            (
+                ROOT
+                / "paper/supporting_information/supporting_information_jcheminform_v1.0.tex"
+            ).read_text(encoding="utf-8"),
+        ]
+    )
+    if "10.5281/zenodo.22126300" in manuscript_release_text:
+        warnings.append(
+            "The packaged manuscript still cites the previous v0.7.7 DOI. "
+            "Replace it in the final submission after Zenodo mints the v0.8.0 DOI."
+        )
 
     total_bytes = sum(path.stat().st_size for path in files)
     if errors:
@@ -135,6 +222,8 @@ def main() -> int:
 
     print(f"PASS: {len(files)} files, {total_bytes:,} bytes")
     print("No forbidden artifact types, risky CSV fields, or recognized private paths found.")
+    for warning in warnings:
+        print(f"WARNING: {warning}")
     return 0
 
 

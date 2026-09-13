@@ -1,33 +1,44 @@
-# Public release checklist
+# Public release checklist for v0.8.0
 
-Do not make this repository public until the blocking items below are resolved.
+## Metadata
 
-## Blocking author decisions
+- [x] Repository URL recorded.
+- [x] Release version set to 0.8.0.
+- [x] Xujing Jiang added as the second author.
+- [x] Dan Wu retained as final and corresponding author.
+- [x] Author order aligned between `CITATION.cff` and `.zenodo.json`.
+- [x] MIT licence applied only to the authors' original materials.
+- [ ] Add ORCID identifiers if the authors choose to provide them.
 
-- [x] Public repository created: `schwarzeteeguo-creator/scaffoldseal-cp-evaluation`.
-- [x] Author names and affiliations have been entered in citation and Zenodo metadata. Add ORCID identifiers later if available.
-- [ ] Confirm that every included source file can be publicly released.
-- [ ] Confirm the upstream CycPeptMPDB redistribution terms; keep row-level records excluded unless permission is explicit.
-- [x] The authors' original repository content is licensed under MIT; third-party data remain excluded (see `NOTICE.md`).
-- [x] `CITATION.cff` and `.zenodo.json` contain release-ready metadata without unresolvable placeholder fields.
-- [ ] Replace manuscript repository/DOI placeholders only after the links resolve.
+## Public-data boundary
+
+- [x] Upstream CycPeptMPDB structures and permeability labels excluded.
+- [x] Per-record predictions and residuals excluded.
+- [x] Model weights, caches, logs, credentials and private runtime paths excluded.
+- [x] Release-safe manifest columns checked for structures and endpoint values.
+- [ ] Author confirms that every included original source file may be publicly released.
+- [ ] Author confirms the current upstream access route immediately before submission.
 
 ## Technical checks
 
-- [ ] Run `python scripts/verify_release.py` and resolve all failures.
-- [ ] Run `python scripts/generate_checksums.py` after the final edit.
-- [ ] Run `python scripts/generate_checksums.py --check` and confirm all hashes pass.
-- [ ] Reproduce the figures from a clean environment using `requirements-reporting.txt`.
-- [ ] Review `git status` and confirm that no raw data, weights, caches, secrets, or TIFF files are staged.
-- [ ] Confirm that `paper/manuscript_v0.7.md` and the matching SI/PDF files are the intended public manuscript version.
-- [ ] Confirm a stable official acquisition URL or author-supplied access route for the exact upstream PAMPA table and verify its SHA-256.
-- [ ] Confirm that the release-safe curation manifests contain no structures or endpoint values.
+- [ ] Run `python scripts/verify_release.py`.
+- [ ] Run `python scripts/generate_checksums.py`.
+- [ ] Run `python scripts/generate_checksums.py --check`.
+- [ ] Confirm `.zenodo.json` parses as valid JSON.
+- [ ] Confirm `CITATION.cff` parses as valid YAML/CFF.
+- [ ] Confirm the manuscript and SI PDFs open correctly.
+- [ ] Confirm repository files are directly browsable after push.
 
 ## Publication sequence
 
-- [x] Create the GitHub repository and commit this folder's contents as the repository root.
-- [ ] Connect the repository to Zenodo before creating the archival release.
-- [ ] Create an initial tagged GitHub release, for example `v0.1.0`.
-- [ ] Confirm that Zenodo archived the release and issued a DOI.
-- [ ] Add the final release URL and DOI to the manuscript, README, and citation metadata.
-- [ ] Regenerate checksums if any archived content changes, then issue a new release rather than rewriting an existing archival record.
+- [x] GitHub repository exists.
+- [x] Zenodo integration was previously enabled.
+- [ ] Commit and push this package to `main`.
+- [ ] Create the immutable GitHub release `v0.8.0`.
+- [ ] Confirm Zenodo successfully archives v0.8.0.
+- [ ] Copy the new version-specific DOI.
+- [ ] Replace the old v0.7.7 DOI in the final manuscript, SI references and bibliography where applicable.
+- [ ] Regenerate the final submission PDFs and source ZIP.
+- [ ] Verify that the new DOI resolves without login.
+
+Do not overwrite or delete the historical v0.7.7 Zenodo record.

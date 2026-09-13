@@ -1,20 +1,51 @@
 {
   "title": "DMPNN Performance Estimates Diverge across Evaluation Boundaries in a Cyclic-Peptide Permeability Benchmark",
+  "version": "0.8.0",
   "upload_type": "software",
-  "description": "Release-safe curation and split manifests, aggregate source data, reporting code and reproducibility records for a cyclic-peptide PAMPA benchmark. The archive excludes third-party row-level structures and permeability labels while redistribution permissions remain unconfirmed.",
+  "access_right": "open",
+  "license": "mit",
+  "language": "eng",
   "creators": [
-    {"name": "Guo, Yutao", "affiliation": "International College of Pharmaceutical Innovation, Soochow University"},
-    {"name": "Zhang, Zihan", "affiliation": "International College of Pharmaceutical Innovation, Soochow University"},
-    {"name": "Zhao, Xuezhou", "affiliation": "International College of Pharmaceutical Innovation, Soochow University"},
-    {"name": "Chen, Mengxi", "affiliation": "International College of Pharmaceutical Innovation, Soochow University"},
-    {"name": "Zhang, Langzhe", "affiliation": "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"},
-    {"name": "Meng, Xiangyu", "affiliation": "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"},
-    {"name": "Wu, Dan", "affiliation": "International College of Pharmaceutical Innovation, Soochow University"}
+    {
+      "name": "Guo, Yutao",
+      "affiliation": "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"
+    },
+    {
+      "name": "Jiang, Xujing",
+      "affiliation": "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"
+    },
+    {
+      "name": "Zhang, Zihan",
+      "affiliation": "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"
+    },
+    {
+      "name": "Zhao, Xuezhou",
+      "affiliation": "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"
+    },
+    {
+      "name": "Chen, Mengxi",
+      "affiliation": "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"
+    },
+    {
+      "name": "Zhang, Langzhe",
+      "affiliation": "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"
+    },
+    {
+      "name": "Meng, Xiangyu",
+      "affiliation": "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"
+    },
+    {
+      "name": "Wu, Dan",
+      "affiliation": "International College of Pharmaceutical Innovation, Soochow University; Department of Chemistry, RCSI"
+    }
   ],
-  "keywords": ["cyclic peptides", "permeability", "chemical machine learning", "benchmarking", "evaluation design", "reproducibility"],
-  "license": "MIT",
-  "related_identifiers": [
-    {"identifier": "https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation", "relation": "isSupplementTo", "resource_type": "software"},
-    {"identifier": "https://doi.org/10.1021/acs.jcim.2c01573", "relation": "isDerivedFrom", "resource_type": "publication-article"}
+  "keywords": [
+    "cyclic peptides",
+    "permeability",
+    "DMPNN",
+    "scaffold split",
+    "analogue-aware evaluation",
+    "molecular machine learning",
+    "reproducibility"
   ]
 }

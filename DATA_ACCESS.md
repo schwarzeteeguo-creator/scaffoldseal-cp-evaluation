@@ -2,50 +2,72 @@
 
 ## Reused third-party data
 
-The study uses PAMPA permeability records from CycPeptMPDB v1.2. The source article is:
+This study uses PAMPA permeability records from CycPeptMPDB v1.2. The source publication is:
 
 > Li et al. CycPeptMPDB: A Comprehensive Database of Membrane Permeability of Cyclic Peptides. *Journal of Chemical Information and Modeling* (2023). https://doi.org/10.1021/acs.jcim.2c01573
 
-That article DOI identifies the source publication; it is not asserted here to be a dataset DOI or accession. The source article identifies the official download page as http://cycpeptmpdb.com/download/. Neither the source article nor the database catalogue located a separate reuse or redistribution licence for the downloaded records. Obtain the records from the official page and comply with its terms. This release does not redistribute the row-level records.
+The article DOI identifies the source publication; it is not treated as a dataset DOI. The source article identifies the official download page as http://cycpeptmpdb.com/download/.
 
-The file used for the frozen analysis was locally named `CycPeptMPDB_Peptide_Assay_PAMPA (5).csv`, contained 7,298 rows, and had SHA-256 `02da1cfc18a92b3ae6e70152445b23c05ce6bb0b6ed10fc7c9e141fbd9462fde`. The parenthetical suffix reflects a local browser-download name and is not a database accession. The official download page is recorded above; do not substitute the article DOI as if it were the dataset URL.
+No separate redistribution licence for the downloaded row-level records was identified in the available source documentation. Users must obtain the records through the official route and comply with the applicable terms. This release therefore does not redistribute the upstream structures or permeability labels.
 
-## Materials included here
+The exact local input used for the frozen analysis:
 
-- Frozen selection and evaluation rules.
+- Local filename: `CycPeptMPDB_Peptide_Assay_PAMPA (5).csv`
+- Rows: 7,298
+- SHA-256: `02da1cfc18a92b3ae6e70152445b23c05ce6bb0b6ed10fc7c9e141fbd9462fde`
+
+The parenthetical filename suffix reflects a local browser-download name and is not a database accession.
+
+## Materials included
+
+- Frozen selection, exclusion and evaluation rules.
+- Release-safe curation and group manifests without structures or endpoint values.
 - Hash-based and aggregate split/governance manifests.
-- Aggregate benchmark and uncertainty metrics.
+- Aggregate benchmark, robustness, calibration and uncertainty metrics.
 - Figure source-data tables and main-results tables.
-- Reporting code and rendered manuscript figures.
-- Provenance and environment records needed to interpret the reported results.
-- Release-safe row and curated-group manifests containing identifiers, source provenance, curation status and fold membership, but no structures or endpoint values.
+- Reporting, curation, splitting and evaluation code.
+- Journal of Cheminformatics manuscript and Supporting Information materials.
+- Provenance, environment and checksum records.
 
-These materials support independent checking of the reported aggregate claims without exposing the excluded row-level corpus.
+## Deterministic curation reconstruction
 
-## Deterministic reconstruction
-
-After obtaining the exact upstream table and verifying its SHA-256, an authorized user can regenerate the release-safe curation audit from the repository root:
+After obtaining the exact upstream table and verifying its SHA-256, run from the repository root:
 
 ```bash
-python paper/supplementary/analyze_curation_source_audit.py \
-  --raw "/path/to/CycPeptMPDB_Peptide_Assay_PAMPA.csv" \
-  --output-dir paper/supplementary/source_data/curation_source_audit_v1
+python paper/supplementary/analyze_curation_source_audit.py --raw "/path/to/CycPeptMPDB_Peptide_Assay_PAMPA.csv" --output-dir paper/supplementary/source_data/curation_source_audit_v1
 ```
 
-The resulting summary must report 7,298 raw rows, 372 excluded detection-limit rows, 6,926 uncensored usable rows, 31 compatible collapsed groups, 6,895 curated source-structure records, 6,862 unique molecules and 41 retained sources. See `data/README.md` for the released column dictionary.
+The expected summary reports:
+
+- 7,298 raw rows.
+- 372 detection-limit rows excluded from continuous regression.
+- 6,926 uncensored usable rows.
+- 31 compatible collapsed groups.
+- 6,895 curated source-structure records.
+- 6,862 unique molecules.
+- 41 retained sources.
+
+See `data/README.md` for the released column dictionary.
 
 ## Materials not included
 
 - Upstream molecular structures or raw database exports.
 - Row-level permeability labels or development-label tables.
-- Per-record predictions, residuals, confidence intervals, or raw descriptors.
-- Model weights, training caches, and internal run directories.
-- Credentials, private vault paths, and machine-specific configuration.
+- Per-record predictions, residuals, intervals or raw descriptors.
+- Model weights, training caches and internal run directories.
+- Credentials, private vault paths and machine-specific configuration.
 
-## Manuscript-ready statement after public archiving
+## Archive identifiers
 
-Replace the bracketed fields only after the release exists:
+- Repository: https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation
+- Stable all-version Concept DOI: https://doi.org/10.5281/zenodo.22126299
+- Previous immutable v0.7.7 DOI: https://doi.org/10.5281/zenodo.22126300
+- Exact v0.8.0 DOI: to be added to the submitted manuscript after Zenodo archives the GitHub v0.8.0 release.
 
-> This study reused CycPeptMPDB v1.2 PAMPA records from http://cycpeptmpdb.com/download/, as described in the source publication (https://doi.org/10.1021/acs.jcim.2c01573). The exact 7,298-row input had SHA-256 02da1cfc18a92b3ae6e70152445b23c05ce6bb0b6ed10fc7c9e141fbd9462fde. The authors do not redistribute upstream structures or permeability labels because a redistribution licence has not been identified. The release-safe archive provides deterministic reconstruction instructions, curation and split manifests, aggregate analysis outputs, figure source data and reporting code at [GITHUB RELEASE URL] and [ZENODO DOI].
+## Submission-ready availability wording after v0.8.0 archiving
 
-If the upstream licence is later confirmed to permit redistribution, document the licence and exact source version before adding any row-level data.
+Replace `[V0.8.0 DOI]` only after the DOI resolves publicly:
+
+> This study reused CycPeptMPDB v1.2 PAMPA records from the database download page (http://cycpeptmpdb.com/download/), as described in the source publication (https://doi.org/10.1021/acs.jcim.2c01573). The exact 7,298-row input had SHA-256 02da1cfc18a92b3ae6e70152445b23c05ce6bb0b6ed10fc7c9e141fbd9462fde. The authors do not redistribute upstream structures or permeability labels because a separate redistribution licence was not identified. The release-safe archive provides deterministic reconstruction instructions, curation and split manifests, aggregate analysis outputs, figure source data, reporting code, provenance records and file-level checksums at https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation and https://doi.org/[V0.8.0 DOI].
+
+If the upstream licence is later confirmed to permit redistribution, document the exact licence and source version before adding any row-level material.

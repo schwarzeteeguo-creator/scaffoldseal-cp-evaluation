@@ -1,0 +1,10 @@
+name: scaffoldseal-cp
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - -r requirements-reporting.txt
+      - -r scaffoldseal/requirements.txt
+      - pytest

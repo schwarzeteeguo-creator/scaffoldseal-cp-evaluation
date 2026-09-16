@@ -15,7 +15,7 @@
 - 将 Data Availability、Competing interests、Funding、Authors' contributions 和 Acknowledgements 统一放入 `Declarations`。
 - 数据库下载页、GitHub 仓库和 Zenodo 归档均改为编号参考文献。
 - 全文幂次采用数学右上角标，例如 $2^{18}$、$10^{-5}$ 和 $s^{-1}$。
-- GitHub v0.8.0 归档 DOI 已统一更新为 `10.5281/zenodo.22732455`。
+- GitHub v0.8.1 归档 DOI 已统一更新为 `10.5281/zenodo.22787442`。
 
 ## 投稿前仍需作者确认
 

@@ -35,11 +35,11 @@
 - [x] GitHub repository exists.
 - [x] Zenodo integration was previously enabled.
 - [x] Commit and push the release package to `main`.
-- [ ] Create the immutable GitHub release `v0.8.1`.
-- [ ] Confirm Zenodo successfully archives v0.8.1.
-- [ ] Copy the new version-specific DOI.
-- [ ] Replace the v0.8.0 DOI in the final manuscript, SI references and bibliography.
-- [ ] Regenerate the final submission PDFs and source ZIP.
-- [ ] Verify that the new DOI resolves publicly.
+- [x] Create the immutable GitHub release `v0.8.1`.
+- [x] Confirm Zenodo successfully archives v0.8.1.
+- [x] Copy the new version-specific DOI: `10.5281/zenodo.22787442`.
+- [x] Replace the v0.8.0 DOI in the final manuscript, SI references and bibliography.
+- [x] Regenerate the final submission PDFs and source ZIP.
+- [x] Verify that the new DOI resolves publicly.
 
 Do not overwrite or delete the historical v0.7.7 or v0.8.0 Zenodo records.

@@ -19,9 +19,9 @@ Do not upload the outer folder as a nested directory, and do not replace the bro
 ## Release status
 
 - The immutable GitHub release `v0.8.0` remains archived at https://doi.org/10.5281/zenodo.22732455.
-- The `v0.8.1` release should be archived as a new Zenodo version.
-- v0.8.1 version DOI: assigned by Zenodo after release publication
+- The immutable GitHub release `v0.8.1` is archived by Zenodo.
+- v0.8.1 version DOI: https://doi.org/10.5281/zenodo.22787442
 - Concept DOI: https://doi.org/10.5281/zenodo.22126299
 - Do not move or reuse the `v0.8.0` or `v0.8.1` tags.
 
-The exact v0.8.1 DOI and final Journal of Cheminformatics submission files may be committed to the default branch after release, but the archived `v0.8.1` tag must remain unchanged.
+The exact v0.8.1 DOI and final Journal of Cheminformatics submission files are recorded on the default branch; the archived `v0.8.1` tag remains unchanged.

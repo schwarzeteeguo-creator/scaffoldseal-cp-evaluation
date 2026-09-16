@@ -192,8 +192,8 @@ def main() -> int:
     citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
     if not re.search(r'^version:\s*["\']?0\.8\.1["\']?\s*$', citation, re.MULTILINE):
         errors.append("CITATION.cff version must be 0.8.1")
-    if 'doi: "10.5281/zenodo.22126299"' not in citation:
-        errors.append("CITATION.cff must record the stable Concept DOI before archiving")
+    if 'doi: "10.5281/zenodo.22787442"' not in citation:
+        errors.append("CITATION.cff must record the exact v0.8.1 DOI")
     citation_positions = [citation.find(name.split(", ")[0]) for name in EXPECTED_CREATORS]
     if any(position < 0 for position in citation_positions):
         errors.append("CITATION.cff is missing one or more family names")
@@ -212,8 +212,8 @@ def main() -> int:
     )
     if "10.5281/zenodo.22126300" in manuscript_release_text:
         errors.append("The packaged manuscript still cites the previous v0.7.7 DOI")
-    if "10.5281/zenodo.22732455" not in manuscript_release_text:
-        errors.append("The packaged manuscript does not cite the preceding archived release DOI")
+    if "10.5281/zenodo.22787442" not in manuscript_release_text:
+        errors.append("The packaged manuscript does not cite the exact v0.8.1 DOI")
 
     total_bytes = sum(path.stat().st_size for path in files)
     if errors:

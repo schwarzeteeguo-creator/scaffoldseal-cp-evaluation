@@ -1,11 +1,11 @@
-# Release inventory v0.8.0
+# Release inventory v0.8.1
 
 ## Metadata and governance
 
 | Material | Location | Public status |
 |---|---|---|
 | Repository overview | `README.md` | Included |
-| Citation metadata | `CITATION.cff` | Included; v0.8.0 DOI recorded |
+| Citation metadata | `CITATION.cff` | Included; v0.8.1 DOI recorded |
 | Zenodo metadata | `.zenodo.json` | Included |
 | Licence and third-party notice | `LICENSE`, `NOTICE.md` | Included |
 | Data-access boundary | `DATA_ACCESS.md` | Included |
@@ -53,4 +53,4 @@
 - Credentials, private paths and machine-specific runtime directories.
 - Live D4 training logs and incomplete D4 outputs.
 
-The exact v0.8.0 archive is available at https://doi.org/10.5281/zenodo.22732455.
+The exact v0.8.1 archive is available at https://doi.org/10.5281/zenodo.22787442. The previous v0.8.0 archive remains available at https://doi.org/10.5281/zenodo.22732455.

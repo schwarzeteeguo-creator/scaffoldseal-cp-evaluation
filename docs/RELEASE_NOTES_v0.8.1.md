@@ -14,6 +14,6 @@ Journal of Cheminformatics revised submission and metadata package.
 
 ## DOI status
 
-The stable all-version Concept DOI is https://doi.org/10.5281/zenodo.22126299. Zenodo assigns the exact v0.8.1 DOI when the GitHub release is archived. The previous immutable v0.8.0 record remains available at https://doi.org/10.5281/zenodo.22732455.
+The exact v0.8.1 release is archived at https://doi.org/10.5281/zenodo.22787442. The stable all-version Concept DOI is https://doi.org/10.5281/zenodo.22126299. The previous immutable v0.8.0 record remains available at https://doi.org/10.5281/zenodo.22732455.
 
 Do not move the v0.8.1 tag after publication.

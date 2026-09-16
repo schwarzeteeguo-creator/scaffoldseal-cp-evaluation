@@ -83,9 +83,9 @@ Some post-confirmatory reconstruction scripts require excluded, locally reconstr
 - All-version Zenodo Concept DOI: https://doi.org/10.5281/zenodo.22126299
 - Previous immutable `v0.7.7` record: https://doi.org/10.5281/zenodo.22126300
 - Exact `v0.8.0` DOI: https://doi.org/10.5281/zenodo.22732455
-- Exact `v0.8.1` DOI: assigned by Zenodo when the release is archived
+- Exact `v0.8.1` DOI: https://doi.org/10.5281/zenodo.22787442
 
-The `v0.8.0` GitHub release remains immutable. The `v0.8.1` release adds the revised submission package and complete author metadata. Do not reuse, delete or move either archived tag. DOI metadata updates belong on the default branch and in the final submission files, without changing an archived release.
+The `v0.8.0` and `v0.8.1` GitHub releases are archived at their version-specific DOIs above. The `v0.8.1` release adds the revised submission package and complete author metadata. Do not reuse, delete or move either archived tag.
 
 ## Licence
 

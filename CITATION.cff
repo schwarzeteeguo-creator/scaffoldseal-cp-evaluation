@@ -2,9 +2,9 @@ cff-version: 1.2.0
 message: "If you use this software, please cite the archived release described in this file."
 title: "DMPNN Performance Estimates Diverge across Evaluation Boundaries in a Cyclic-Peptide Permeability Benchmark"
 type: software
-version: 0.8.0
-doi: "10.5281/zenodo.22732455"
-date-released: "2026-09-13"
+version: 0.8.1
+doi: "10.5281/zenodo.22126299"
+date-released: "2026-09-16"
 license: MIT
 repository-code: "https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation"
 

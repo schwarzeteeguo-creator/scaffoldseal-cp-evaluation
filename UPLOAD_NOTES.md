@@ -1,8 +1,8 @@
-# Upload notes for v0.8.0
+# Upload notes for v0.8.1
 
 ## What to upload
 
-Use the **contents** of `github_upload_scaffoldseal_cp_v0.8.0` as the root of:
+Use the repository contents as the root of:
 
 https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation
 
@@ -18,9 +18,10 @@ Do not upload the outer folder as a nested directory, and do not replace the bro
 
 ## Release status
 
-- The immutable GitHub release `v0.8.0` has been archived by Zenodo.
-- Version DOI: https://doi.org/10.5281/zenodo.22732455
+- The immutable GitHub release `v0.8.0` remains archived at https://doi.org/10.5281/zenodo.22732455.
+- The `v0.8.1` release should be archived as a new Zenodo version.
+- v0.8.1 version DOI: assigned by Zenodo after release publication
 - Concept DOI: https://doi.org/10.5281/zenodo.22126299
-- Do not move or reuse the `v0.8.0` tag.
+- Do not move or reuse the `v0.8.0` or `v0.8.1` tags.
 
-The DOI metadata and final Journal of Cheminformatics submission files may be committed to the default branch after release, but the archived `v0.8.0` tag must remain unchanged.
+The exact v0.8.1 DOI and final Journal of Cheminformatics submission files may be committed to the default branch after release, but the archived `v0.8.1` tag must remain unchanged.

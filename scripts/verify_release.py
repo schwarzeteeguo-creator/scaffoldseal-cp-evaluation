@@ -1,4 +1,4 @@
-"""Audit the public v0.8.0 release candidate."""
+"""Audit the public v0.8.1 release candidate."""
 
 from __future__ import annotations
 
@@ -32,7 +32,7 @@ REQUIRED = {
     "results/README.md",
     "docs/REPRODUCIBILITY.md",
     "docs/RELEASE_INVENTORY_V0.8.md",
-    "docs/RELEASE_NOTES_v0.8.0.md",
+    "docs/RELEASE_NOTES_v0.8.1.md",
     "docs/PUBLIC_PROTOCOL_TIMELINE.md",
     "docs/SPLIT_BOUNDARY_SENSITIVITY_PREREGISTRATION.md",
     "docs/SPLIT_BOUNDARY_MANIFEST_FREEZE.md",
@@ -186,14 +186,14 @@ def main() -> int:
         creators = [item.get("name") for item in zenodo.get("creators", [])]
         if creators != EXPECTED_CREATORS:
             errors.append(f"Zenodo creator order mismatch: {creators}")
-        if zenodo.get("version") != "0.8.0":
-            errors.append("Zenodo version must be 0.8.0")
+        if zenodo.get("version") != "0.8.1":
+            errors.append("Zenodo version must be 0.8.1")
 
     citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
-    if not re.search(r'^version:\s*["\']?0\.8\.0["\']?\s*$', citation, re.MULTILINE):
-        errors.append("CITATION.cff version must be 0.8.0")
-    if 'doi: "10.5281/zenodo.22732455"' not in citation:
-        errors.append("CITATION.cff must record the v0.8.0 DOI")
+    if not re.search(r'^version:\s*["\']?0\.8\.1["\']?\s*$', citation, re.MULTILINE):
+        errors.append("CITATION.cff version must be 0.8.1")
+    if 'doi: "10.5281/zenodo.22126299"' not in citation:
+        errors.append("CITATION.cff must record the stable Concept DOI before archiving")
     citation_positions = [citation.find(name.split(", ")[0]) for name in EXPECTED_CREATORS]
     if any(position < 0 for position in citation_positions):
         errors.append("CITATION.cff is missing one or more family names")
@@ -213,7 +213,7 @@ def main() -> int:
     if "10.5281/zenodo.22126300" in manuscript_release_text:
         errors.append("The packaged manuscript still cites the previous v0.7.7 DOI")
     if "10.5281/zenodo.22732455" not in manuscript_release_text:
-        errors.append("The packaged manuscript does not cite the v0.8.0 DOI")
+        errors.append("The packaged manuscript does not cite the preceding archived release DOI")
 
     total_bytes = sum(path.stat().st_size for path in files)
     if errors:

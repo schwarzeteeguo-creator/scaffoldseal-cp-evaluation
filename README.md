@@ -2,7 +2,7 @@
 
 Release-ready repository for the manuscript *DMPNN Performance Estimates Diverge across Evaluation Boundaries in a Cyclic-Peptide Permeability Benchmark*, prepared for submission to the *Journal of Cheminformatics*.
 
-This directory is intended to be copied **as the repository root** for release `v0.8.0`. Its contents are directly browsable; the repository is not distributed only as a nested ZIP archive.
+This directory is intended to be copied **as the repository root** for release `v0.8.1`. Its contents are directly browsable; the repository is not distributed only as a nested ZIP archive.
 
 ## Repository map
 
@@ -83,8 +83,9 @@ Some post-confirmatory reconstruction scripts require excluded, locally reconstr
 - All-version Zenodo Concept DOI: https://doi.org/10.5281/zenodo.22126299
 - Previous immutable `v0.7.7` record: https://doi.org/10.5281/zenodo.22126300
 - Exact `v0.8.0` DOI: https://doi.org/10.5281/zenodo.22732455
+- Exact `v0.8.1` DOI: assigned by Zenodo when the release is archived
 
-The `v0.8.0` GitHub release is archived at the version-specific DOI above. Do not reuse, delete or move the archived tag. DOI metadata updates belong on the default branch and in the final submission files, without changing the archived release.
+The `v0.8.0` GitHub release remains immutable. The `v0.8.1` release adds the revised submission package and complete author metadata. Do not reuse, delete or move either archived tag. DOI metadata updates belong on the default branch and in the final submission files, without changing an archived release.
 
 ## Licence
 

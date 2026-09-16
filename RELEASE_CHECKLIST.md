@@ -1,10 +1,11 @@
-# Public release checklist for v0.8.0
+# Public release checklist for v0.8.1
 
 ## Metadata
 
 - [x] Repository URL recorded.
-- [x] Release version set to 0.8.0.
+- [x] Release version set to 0.8.1.
 - [x] Xujing Jiang added as the second author.
+- [x] Guojun Xiong added as the penultimate author.
 - [x] Dan Wu retained as final and corresponding author.
 - [x] Author order aligned between `CITATION.cff` and `.zenodo.json`.
 - [x] MIT licence applied only to the authors' original materials.
@@ -34,11 +35,11 @@
 - [x] GitHub repository exists.
 - [x] Zenodo integration was previously enabled.
 - [x] Commit and push the release package to `main`.
-- [x] Create the immutable GitHub release `v0.8.0`.
-- [x] Confirm Zenodo successfully archives v0.8.0.
-- [x] Copy the new version-specific DOI: `10.5281/zenodo.22732455`.
-- [x] Replace the old v0.7.7 DOI in the final manuscript, SI references and bibliography where applicable.
-- [x] Regenerate the final submission PDFs and source ZIP.
-- [x] Verify that the new DOI resolves publicly.
+- [ ] Create the immutable GitHub release `v0.8.1`.
+- [ ] Confirm Zenodo successfully archives v0.8.1.
+- [ ] Copy the new version-specific DOI.
+- [ ] Replace the v0.8.0 DOI in the final manuscript, SI references and bibliography.
+- [ ] Regenerate the final submission PDFs and source ZIP.
+- [ ] Verify that the new DOI resolves publicly.
 
-Do not overwrite or delete the historical v0.7.7 Zenodo record.
+Do not overwrite or delete the historical v0.7.7 or v0.8.0 Zenodo records.

@@ -1,0 +1,185 @@
+\begin{thebibliography}{10}
+\providecommand{\doi}[1]{\url{https://doi.org/#1}}
+\bibcommenthead
+
+\bibitem[\protect\citeauthoryear{Rezai et~al.}{2006}]{rezai2006flexibility}
+Rezai T, Bock JE, Zhou MV, Kalyanaraman C, Lokey RS, Jacobson MP.
+\newblock Conformational Flexibility, Internal Hydrogen Bonding, and Passive
+  Membrane Permeability: Successful In Silico Prediction of the Relative
+  Permeabilities of Cyclic Peptides.
+\newblock Journal of the American Chemical Society. 2006;128(43):14073--14080.
+\newblock \doi{10.1021/ja063076p}.
+
+\bibitem[\protect\citeauthoryear{Wang et~al.}{2021}]{wang2021decapeptides}
+Wang S, K\"onig G, Roth HJ, Fouch\'e M, Rodde S, Riniker S.
+\newblock Effect of Flexibility, Lipophilicity, and the Location of Polar
+  Residues on the Passive Membrane Permeability of a Series of Cyclic
+  Decapeptides.
+\newblock Journal of Medicinal Chemistry. 2021;64(17):12761--12773.
+\newblock \doi{10.1021/acs.jmedchem.1c00775}.
+
+\bibitem[\protect\citeauthoryear{Li et~al.}{2022}]{li2022descriptors}
+Li J, Kannan S, Aronica P, Brown CJ, Partridge AW, Verma CS.
+\newblock Molecular Descriptors Suggest Stapling as a Strategy for Optimizing
+  Membrane Permeability of Cyclic Peptides.
+\newblock The Journal of Chemical Physics. 2022;156(6):065101.
+\newblock \doi{10.1063/5.0078025}.
+
+\bibitem[\protect\citeauthoryear{Linker et~al.}{2022}]{linker2022interfaces}
+Linker SM, Schellhaas C, Ries B, Roth HJ, Fouch\'e M, Rodde S, et~al.
+\newblock Polar/Apolar Interfaces Modulate the Conformational Behavior of
+  Cyclic Peptides with Impact on Their Passive Membrane Permeability.
+\newblock RSC Advances. 2022;12(10):5782--5796.
+\newblock \doi{10.1039/d1ra09025a}.
+
+\bibitem[\protect\citeauthoryear{Kansy et~al.}{1998}]{kansy1998pampa}
+Kansy M, Senner F, Gubernator K.
+\newblock Physicochemical High Throughput Screening: Parallel Artificial
+  Membrane Permeation Assay in the Description of Passive Absorption Processes.
+\newblock Journal of Medicinal Chemistry. 1998;41(7):1007--1010.
+\newblock \doi{10.1021/jm970530e}.
+
+\bibitem[\protect\citeauthoryear{Li et~al.}{2023}]{li2023cycpeptmpdb}
+Li J, et~al.
+\newblock CycPeptMPDB: A Comprehensive Database of Membrane Permeability of
+  Cyclic Peptides.
+\newblock Journal of Chemical Information and Modeling. 2023;63:2240--2250.
+\newblock \doi{10.1021/acs.jcim.2c01573}.
+
+\bibitem[\protect\citeauthoryear{Li et~al.}{2024}]{li2024cycpeptmp}
+Li J, Yanagisawa K, Akiyama Y.
+\newblock CycPeptMP: Enhancing Membrane Permeability Prediction of Cyclic
+  Peptides with Multi-Level Molecular Features and Data Augmentation.
+\newblock Briefings in Bioinformatics. 2024;25:bbae417.
+\newblock \doi{10.1093/bib/bbae417}.
+
+\bibitem[\protect\citeauthoryear{Feller and Wilke}{2025}]{feller2025peptideclm}
+Feller AL, Wilke CO.
+\newblock Peptide-Aware Chemical Language Model Successfully Predicts Membrane
+  Diffusion of Cyclic Peptides.
+\newblock Journal of Chemical Information and Modeling. 2025;65:571--579.
+\newblock \doi{10.1021/acs.jcim.4c01441}.
+
+\bibitem[\protect\citeauthoryear{Wang et~al.}{2025}]{wang2025multicycpermea}
+Wang Z, et~al.
+\newblock MultiCycPermea: Accurate and Interpretable Prediction of Cyclic
+  Peptide Permeability Using a Multimodal Image-Sequence Model.
+\newblock BMC Biology. 2025;23.
+\newblock \doi{10.1186/s12915-025-02166-2}.
+
+\bibitem[\protect\citeauthoryear{Wen et~al.}{2026}]{wen2026ensemblecycperm}
+Wen S, Wang Y, Qian Y.
+\newblock EnsembleCycPerm: Interpretable Modeling of Cyclic Peptide
+  Permeability through Solvent-Dependent Conformational Ensembles.
+\newblock Journal of Chemical Information and Modeling.
+  2026;\doi{10.1021/acs.jcim.6c01213}.
+
+\bibitem[\protect\citeauthoryear{Wu et~al.}{2018}]{wu2018moleculenet}
+Wu Z, Ramsundar B, Feinberg EN, Gomes J, Geniesse C, Pappu AS, et~al.
+\newblock MoleculeNet: A Benchmark for Molecular Machine Learning.
+\newblock Chemical Science. 2018;9(2):513--530.
+\newblock \doi{10.1039/C7SC02664A}.
+
+\bibitem[\protect\citeauthoryear{Yang et~al.}{2019}]{yang2019representations}
+Yang K, Swanson K, Jin W, Coley C, Eiden P, Gao H, et~al.
+\newblock Analyzing Learned Molecular Representations for Property Prediction.
+\newblock Journal of Chemical Information and Modeling. 2019;59(8):3370--3388.
+\newblock \doi{10.1021/acs.jcim.9b00237}.
+
+\bibitem[\protect\citeauthoryear{Sheridan}{2013}]{sheridan2013timesplit}
+Sheridan RP.
+\newblock Time-Split Cross-Validation as a Method for Estimating the Goodness
+  of Prospective Prediction.
+\newblock Journal of Chemical Information and Modeling. 2013;53(4):783--790.
+\newblock \doi{10.1021/ci400084k}.
+
+\bibitem[\protect\citeauthoryear{Landrum et~al.}{2023}]{landrum2023simpd}
+Landrum GA, Beckers M, Lanini J, Schneider N, Stiefl N, Riniker S.
+\newblock {SIMPD}: An Algorithm for Generating Simulated Time Splits for
+  Validating Machine Learning Approaches.
+\newblock Journal of Cheminformatics. 2023;15(1):119.
+\newblock \doi{10.1186/s13321-023-00787-9}.
+
+\bibitem[\protect\citeauthoryear{Roberts
+  et~al.}{2017}]{roberts2017crossvalidation}
+Roberts DR, et~al.
+\newblock Cross-Validation Strategies for Data with Temporal, Spatial,
+  Hierarchical, or Phylogenetic Structure.
+\newblock Ecography. 2017;40:913--929.
+\newblock \doi{10.1111/ecog.02881}.
+
+\bibitem[\protect\citeauthoryear{Wallach and
+  Heifets}{2018}]{wallach2018analogue}
+Wallach I, Heifets A.
+\newblock Most Ligand-Based Classification Benchmarks Reward Memorization
+  Rather than Generalization.
+\newblock Journal of Chemical Information and Modeling. 2018;58:916--932.
+\newblock \doi{10.1021/acs.jcim.7b00403}.
+
+\bibitem[\protect\citeauthoryear{Kalinina et~al.}{2025}]{kalinina2025datasail}
+Kalinina OV, et~al.
+\newblock Data Splitting to Avoid Information Leakage with {DataSAIL}.
+\newblock Nature Communications. 2025;16:3337.
+\newblock \doi{10.1038/s41467-025-58606-8}.
+
+\bibitem[\protect\citeauthoryear{Walsh et~al.}{2021}]{walsh2021dome}
+Walsh I, et~al.
+\newblock DOME: Recommendations for Supervised Machine Learning Validation in
+  Biology.
+\newblock Nature Methods. 2021;18:1122--1127.
+\newblock \doi{10.1038/s41592-021-01205-4}.
+
+\bibitem[\protect\citeauthoryear{Geylan
+  et~al.}{2024}]{geyland2024applicability}
+Geylan G, et~al.
+\newblock A Methodology to Correctly Assess the Applicability Domain of Cell
+  Membrane Permeability Predictors for Cyclic Peptides.
+\newblock Digital Discovery. 2024;3:1761--1775.
+\newblock \doi{10.1039/D4DD00056K}.
+
+\bibitem[\protect\citeauthoryear{Liu et~al.}{2025}]{liu2025benchmark}
+Liu W, et~al.
+\newblock Systematic Benchmarking of 13 AI Methods for Predicting Cyclic
+  Peptide Membrane Permeability.
+\newblock Journal of Cheminformatics. 2025;17:129.
+\newblock \doi{10.1186/s13321-025-01083-4}.
+
+\bibitem[\protect\citeauthoryear{Zhang and Lee}{2019}]{zhang2019bayesian}
+Zhang Y, Lee AA.
+\newblock Bayesian Semi-Supervised Learning for Uncertainty-Calibrated
+  Prediction of Molecular Properties and Active Learning.
+\newblock Chemical Science. 2019;10(35):8154--8163.
+\newblock \doi{10.1039/c9sc00616h}.
+
+\bibitem[\protect\citeauthoryear{Hirschfeld
+  et~al.}{2020}]{hirschfeld2020uncertainty}
+Hirschfeld L, Swanson K, Yang K, Barzilay R, Coley CW.
+\newblock Uncertainty Quantification Using Neural Networks for Molecular
+  Property Prediction.
+\newblock Journal of Chemical Information and Modeling. 2020;60(8):3770--3780.
+\newblock \doi{10.1021/acs.jcim.0c00502}.
+
+\bibitem[\protect\citeauthoryear{Li et~al.}{2024}]{li2024conformalized}
+Li P, Hua L, Ma Z, Hu W, Liu Y, Zhu J.
+\newblock Conformalized Graph Learning for Molecular {ADMET} Property
+  Prediction and Reliable Uncertainty Quantification.
+\newblock Journal of Chemical Information and Modeling. 2024;64(23):8705--8717.
+\newblock \doi{10.1021/acs.jcim.4c01139}.
+
+\bibitem[\protect\citeauthoryear{Guo et~al.}{2026}]{scaffoldseal_github}
+Guo Y, Jiang X, Zhang Z, Zhao X, Chen M, Zhang L, et~al.: ScaffoldSeal-CP
+  Evaluation Repository.
+\newblock GitHub.
+\newblock Accessed 12 September 2026.
+\newblock
+  \url{https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation}.
+
+\bibitem[\protect\citeauthoryear{Guo et~al.}{2026}]{scaffoldseal_zenodo}
+Guo Y, Jiang X, Zhang Z, Zhao X, Chen M, Zhang L, et~al.: {DMPNN} Performance
+  Estimates Diverge across Evaluation Boundaries in a Cyclic-Peptide
+  Permeability Benchmark.
+\newblock Zenodo.
+\newblock Version 0.8.0.
+\newblock \url{https://doi.org/10.5281/zenodo.22732455}.
+
+\end{thebibliography}

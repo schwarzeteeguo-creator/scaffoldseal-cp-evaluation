@@ -36,12 +36,12 @@ REQUIRED = {
     "docs/PUBLIC_PROTOCOL_TIMELINE.md",
     "docs/SPLIT_BOUNDARY_SENSITIVITY_PREREGISTRATION.md",
     "docs/SPLIT_BOUNDARY_MANIFEST_FREEZE.md",
-    "paper/manuscript/manuscript_jcheminform_v1.0.tex",
-    "paper/manuscript/ScaffoldSeal_CP_JCheminform_manuscript_v1.0.pdf",
+    "paper/manuscript/manuscript_jcheminform_v1.1_DOI.tex",
+    "paper/manuscript/ScaffoldSeal_CP_JCheminform_manuscript_v1.1_DOI.pdf",
     "paper/manuscript/references.bib",
-    "paper/supporting_information/supporting_information_jcheminform_v1.0.tex",
-    "paper/supporting_information/ScaffoldSeal_CP_JCheminform_supporting_information_v1.0.pdf",
-    "paper/complete_review/ScaffoldSeal_CP_JCheminform_complete_review_package_v1.0.pdf",
+    "paper/supporting_information/supporting_information_jcheminform_v1.1_DOI.tex",
+    "paper/supporting_information/ScaffoldSeal_CP_JCheminform_supporting_information_v1.1_DOI.pdf",
+    "paper/complete_review/ScaffoldSeal_CP_JCheminform_complete_review_package_v1.1_DOI.pdf",
     "paper/figures/make_main_figures.py",
     "paper/figures/output/figure1_study_workflow.png",
     "paper/figures/output/figure2_evidence_geometry.png",
@@ -117,6 +117,7 @@ EXPECTED_CREATORS = [
     "Chen, Mengxi",
     "Zhang, Langzhe",
     "Meng, Xiangyu",
+    "Xiong, Guojun",
     "Wu, Dan",
 ]
 
@@ -189,29 +190,30 @@ def main() -> int:
             errors.append("Zenodo version must be 0.8.0")
 
     citation = (ROOT / "CITATION.cff").read_text(encoding="utf-8")
-    if 'version: "0.8.0"' not in citation:
+    if not re.search(r'^version:\s*["\']?0\.8\.0["\']?\s*$', citation, re.MULTILINE):
         errors.append("CITATION.cff version must be 0.8.0")
+    if 'doi: "10.5281/zenodo.22732455"' not in citation:
+        errors.append("CITATION.cff must record the v0.8.0 DOI")
     citation_positions = [citation.find(name.split(", ")[0]) for name in EXPECTED_CREATORS]
     if any(position < 0 for position in citation_positions):
         errors.append("CITATION.cff is missing one or more family names")
 
     manuscript_release_text = "\n".join(
         [
-            (ROOT / "paper/manuscript/manuscript_jcheminform_v1.0.tex").read_text(
+            (ROOT / "paper/manuscript/manuscript_jcheminform_v1.1_DOI.tex").read_text(
                 encoding="utf-8"
             ),
             (ROOT / "paper/manuscript/references.bib").read_text(encoding="utf-8"),
             (
                 ROOT
-                / "paper/supporting_information/supporting_information_jcheminform_v1.0.tex"
+                / "paper/supporting_information/supporting_information_jcheminform_v1.1_DOI.tex"
             ).read_text(encoding="utf-8"),
         ]
     )
     if "10.5281/zenodo.22126300" in manuscript_release_text:
-        warnings.append(
-            "The packaged manuscript still cites the previous v0.7.7 DOI. "
-            "Replace it in the final submission after Zenodo mints the v0.8.0 DOI."
-        )
+        errors.append("The packaged manuscript still cites the previous v0.7.7 DOI")
+    if "10.5281/zenodo.22732455" not in manuscript_release_text:
+        errors.append("The packaged manuscript does not cite the v0.8.0 DOI")
 
     total_bytes = sum(path.stat().st_size for path in files)
     if errors:

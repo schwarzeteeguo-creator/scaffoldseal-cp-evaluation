@@ -3,6 +3,8 @@ message: "If you use this software, please cite the archived release described i
 title: "DMPNN Performance Estimates Diverge across Evaluation Boundaries in a Cyclic-Peptide Permeability Benchmark"
 type: software
 version: 0.8.0
+doi: "10.5281/zenodo.22732455"
+date-released: "2026-09-13"
 license: MIT
 repository-code: "https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation"
 
@@ -34,6 +36,10 @@ authors:
   - family-names: Meng
     given-names: Xiangyu
     affiliation: "International College of Pharmaceutical Innovation, Soochow University; School of Pharmacy and Biomolecular Sciences, RCSI"
+
+  - family-names: Xiong
+    given-names: Guojun
+    affiliation: "International College of Pharmaceutical Innovation, Soochow University"
 
   - family-names: Wu
     given-names: Dan

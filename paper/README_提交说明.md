@@ -2,10 +2,10 @@
 
 ## 文件用途
 
-- `ScaffoldSeal_CP_JCheminform_manuscript_v1.0.pdf`：主文审稿 PDF，采用 Springer Nature `sn-jnl` 模板、双倍行距、页码和行号。
-- `ScaffoldSeal_CP_JCheminform_supporting_information_v1.0.pdf`：Additional file 1（Supporting Information）。
-- `ScaffoldSeal_CP_JCheminform_complete_review_package_v1.0.pdf`：主文和 SI 合并的内部审阅版，不建议作为单个文件上传，除非投稿系统明确要求。
-- `ScaffoldSeal_CP_JCheminform_LaTeX_source_v1.0.zip`：投稿系统要求的可编辑 LaTeX 源文件、参考文献和图件。
+- `ScaffoldSeal_CP_JCheminform_manuscript_v1.1_DOI.pdf`：主文审稿 PDF，采用 Springer Nature `sn-jnl` 模板、双倍行距、页码和行号。
+- `ScaffoldSeal_CP_JCheminform_supporting_information_v1.1_DOI.pdf`：Additional file 1（Supporting Information）。
+- `ScaffoldSeal_CP_JCheminform_complete_review_package_v1.1_DOI.pdf`：主文和 SI 合并的内部审阅版，不建议作为单个文件上传，除非投稿系统明确要求。
+- `ScaffoldSeal_CP_JCheminform_LaTeX_source_v1.1_DOI.zip`：投稿系统要求的可编辑 LaTeX 源文件、参考文献和图件。
 
 ## 已完成的期刊适配
 
@@ -15,6 +15,7 @@
 - 将 Data Availability、Competing interests、Funding、Authors' contributions 和 Acknowledgements 统一放入 `Declarations`。
 - 数据库下载页、GitHub 仓库和 Zenodo 归档均改为编号参考文献。
 - 全文幂次采用数学右上角标，例如 $2^{18}$、$10^{-5}$ 和 $s^{-1}$。
+- GitHub v0.8.0 归档 DOI 已统一更新为 `10.5281/zenodo.22732455`。
 
 ## 投稿前仍需作者确认
 

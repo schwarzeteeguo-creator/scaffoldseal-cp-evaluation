@@ -82,9 +82,9 @@ Some post-confirmatory reconstruction scripts require excluded, locally reconstr
 - Repository: https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation
 - All-version Zenodo Concept DOI: https://doi.org/10.5281/zenodo.22126299
 - Previous immutable `v0.7.7` record: https://doi.org/10.5281/zenodo.22126300
-- Exact `v0.8.0` DOI: pending creation of the GitHub `v0.8.0` release.
+- Exact `v0.8.0` DOI: https://doi.org/10.5281/zenodo.22732455
 
-Do not reuse or move an existing tag. After Zenodo archives `v0.8.0`, cite the newly minted version-specific DOI in the submitted manuscript and update `CITATION.cff` on the default branch without moving the archived tag.
+The `v0.8.0` GitHub release is archived at the version-specific DOI above. Do not reuse, delete or move the archived tag. DOI metadata updates belong on the default branch and in the final submission files, without changing the archived release.
 
 ## Licence
 

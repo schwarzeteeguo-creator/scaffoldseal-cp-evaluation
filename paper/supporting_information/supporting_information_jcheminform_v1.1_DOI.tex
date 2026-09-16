@@ -30,7 +30,7 @@
 \vspace{0.6em}
 {\large\bfseries DMPNN Performance Estimates Diverge across Evaluation Boundaries in a Cyclic-Peptide Permeability Benchmark\par}
 \vspace{0.8em}
-Yutao Guo$^{1,2}$, Xujing Jiang$^{1,2}$, Zihan Zhang$^{1,2}$, Xuezhou Zhao$^{1,2}$, Mengxi Chen$^{1,2}$, Langzhe Zhang$^{1,2}$, Xiangyu Meng$^{1,2}$, Dan Wu$^{1,3,*}$\\
+Yutao Guo$^{1,2}$, Xujing Jiang$^{1,2}$, Zihan Zhang$^{1,2}$, Xuezhou Zhao$^{1,2}$, Mengxi Chen$^{1,2}$, Langzhe Zhang$^{1,2}$, Xiangyu Meng$^{1,2}$, Guojun Xiong$^{1}$, Dan Wu$^{1,3,*}$\\
 \vspace{0.35em}
 \small $^{1}$International College of Pharmaceutical Innovation, Soochow University, Suzhou 215123, China\\
 $^{2}$School of Pharmacy and Biomolecular Sciences, RCSI, 123 St Stephen's Green, Dublin 2, D02 VY51, Ireland\\
@@ -105,7 +105,7 @@ Equal-block macro & 0.9048 & 0.4386 & 0.4662 \\
 
 \section*{Small-cluster and high-leverage sensitivity}
 
-The five accepted seeds were first averaged within each source, giving 41 paired source-level joint-minus-random MAE differences nested in 18 sealed blocks. Three calculations then examined sensitivity to the small and unequal cluster set. An intercept-only CR1 variance estimator clustered the paired source differences by sealed block and used a t critical value with 17 degrees of freedom. A delete-one-block jackknife used the same t reference. Finally, all $2^{18}$ assignments obtained by independently changing the sign of each block contribution were enumerated.
+The five accepted seeds were first averaged within each source, giving 41 paired source-level joint-minus-random MAE differences nested in 18 sealed blocks. Three calculations then examined sensitivity to the small and unequal cluster set. An intercept-only CR1 variance estimator clustered the paired source differences by sealed block and used the critical value from Student's $t$ distribution with 17 degrees of freedom. A delete-one-block jackknife used the same reference distribution. Finally, all $2^{18}$ assignments obtained by independently changing the sign of each block contribution were enumerated.
 
 
 \begin{table}[htbp]
@@ -223,7 +223,7 @@ Primary report identifiers: Geylan et al., DOI 10.1039/D4DD00056K; CycPeptMP, DO
 
 \begin{table}[htbp]
 \centering
-\caption{Protocol and release timeline. The complete chronology, file hashes and distinction between an internal freeze and an independently time-stamped public preregistration are provided in \texttt{PUBLIC\_\allowbreak{}PROTOCOL\_\allowbreak{}TIMELINE.md}. The public repository is \url{https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation} and the archived release is \url{https://doi.org/10.5281/zenodo.22126300.} Local hashes alone are not described as independent public preregistration.}
+\caption{Protocol and release timeline. The complete chronology, file hashes and distinction between an internal freeze and an independently time-stamped public preregistration are provided in \texttt{PUBLIC\_\allowbreak{}PROTOCOL\_\allowbreak{}TIMELINE.md}. The public repository is \url{https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation} and the archived release is \url{https://doi.org/10.5281/zenodo.22732455}. Local hashes alone are not described as independent public preregistration.}
 \scriptsize
 \setlength{\tabcolsep}{3pt}
 \renewcommand{\arraystretch}{1.15}
@@ -266,7 +266,7 @@ Censoring and source metadata & \texttt{analyze\_\allowbreak{}curation\_\allowbr
 D3 coverage aggregation & \texttt{analyze\_\allowbreak{}d3\_\allowbreak{}coverage\_\allowbreak{}stratification.py}; per-seed, per-fold and per-source CSVs; JSON & Complete; checkpoint-only predictions, no fitting \\
 Prior-work boundary comparison & \texttt{PRIOR\_\allowbreak{}WORK\_\allowbreak{}COMPARISON\_\allowbreak{}NOTES.md}; \texttt{prior\_\allowbreak{}work\_\allowbreak{}evaluation\_\allowbreak{}comparison.csv} & Complete through search date \\
 Protocol and frozen files & v2 internal protocol, research map, CV governance, experiment plan, deviation table and public timeline & Complete locally; external timestamp absent \\
-Public archive metadata & release checksum, \texttt{CITATION.cff}, license, GitHub URL and Zenodo DOI & Archived at \url{https://doi.org/10.5281/zenodo.22126300} \\
+Public archive metadata & release checksum, \texttt{CITATION.cff}, license, GitHub URL and Zenodo DOI & Archived at \url{https://doi.org/10.5281/zenodo.22732455} \\
 \bottomrule
 \end{tabularx}
 \end{table}

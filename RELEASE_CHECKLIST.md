@@ -21,24 +21,24 @@
 
 ## Technical checks
 
-- [ ] Run `python scripts/verify_release.py`.
-- [ ] Run `python scripts/generate_checksums.py`.
-- [ ] Run `python scripts/generate_checksums.py --check`.
-- [ ] Confirm `.zenodo.json` parses as valid JSON.
-- [ ] Confirm `CITATION.cff` parses as valid YAML/CFF.
-- [ ] Confirm the manuscript and SI PDFs open correctly.
-- [ ] Confirm repository files are directly browsable after push.
+- [x] Run `python scripts/verify_release.py`.
+- [x] Run `python scripts/generate_checksums.py`.
+- [x] Run `python scripts/generate_checksums.py --check`.
+- [x] Confirm `.zenodo.json` parses as valid JSON.
+- [x] Confirm `CITATION.cff` parses as valid YAML/CFF.
+- [x] Confirm the manuscript and SI PDFs open correctly.
+- [x] Confirm repository files are directly browsable after push.
 
 ## Publication sequence
 
 - [x] GitHub repository exists.
 - [x] Zenodo integration was previously enabled.
-- [ ] Commit and push this package to `main`.
-- [ ] Create the immutable GitHub release `v0.8.0`.
-- [ ] Confirm Zenodo successfully archives v0.8.0.
-- [ ] Copy the new version-specific DOI.
-- [ ] Replace the old v0.7.7 DOI in the final manuscript, SI references and bibliography where applicable.
-- [ ] Regenerate the final submission PDFs and source ZIP.
-- [ ] Verify that the new DOI resolves without login.
+- [x] Commit and push the release package to `main`.
+- [x] Create the immutable GitHub release `v0.8.0`.
+- [x] Confirm Zenodo successfully archives v0.8.0.
+- [x] Copy the new version-specific DOI: `10.5281/zenodo.22732455`.
+- [x] Replace the old v0.7.7 DOI in the final manuscript, SI references and bibliography where applicable.
+- [x] Regenerate the final submission PDFs and source ZIP.
+- [x] Verify that the new DOI resolves publicly.
 
 Do not overwrite or delete the historical v0.7.7 Zenodo record.

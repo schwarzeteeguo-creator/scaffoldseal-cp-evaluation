@@ -5,7 +5,7 @@
 | Material | Location | Public status |
 |---|---|---|
 | Repository overview | `README.md` | Included |
-| Citation metadata | `CITATION.cff` | Included; version DOI pending |
+| Citation metadata | `CITATION.cff` | Included; v0.8.0 DOI recorded |
 | Zenodo metadata | `.zenodo.json` | Included |
 | Licence and third-party notice | `LICENSE`, `NOTICE.md` | Included |
 | Data-access boundary | `DATA_ACCESS.md` | Included |
@@ -42,7 +42,7 @@
 | Journal of Cheminformatics main manuscript | `paper/manuscript/` | Included |
 | Supporting Information | `paper/supporting_information/` | Included |
 | Combined internal review PDF | `paper/complete_review/` | Included |
-| Editable LaTeX source archive | `paper/ScaffoldSeal_CP_JCheminform_LaTeX_source_v1.0.zip` | Included |
+| Editable LaTeX source archive | `paper/ScaffoldSeal_CP_JCheminform_LaTeX_source_v1.1_DOI.zip` | Included |
 
 ## Deliberately excluded
 
@@ -53,4 +53,4 @@
 - Credentials, private paths and machine-specific runtime directories.
 - Live D4 training logs and incomplete D4 outputs.
 
-The exact v0.8.0 Zenodo DOI remains unresolved until the GitHub release is published. This is a metadata action, not a missing scientific artifact.
+The exact v0.8.0 archive is available at https://doi.org/10.5281/zenodo.22732455.

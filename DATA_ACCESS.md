@@ -62,12 +62,10 @@ See `data/README.md` for the released column dictionary.
 - Repository: https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation
 - Stable all-version Concept DOI: https://doi.org/10.5281/zenodo.22126299
 - Previous immutable v0.7.7 DOI: https://doi.org/10.5281/zenodo.22126300
-- Exact v0.8.0 DOI: to be added to the submitted manuscript after Zenodo archives the GitHub v0.8.0 release.
+- Exact v0.8.0 DOI: https://doi.org/10.5281/zenodo.22732455
 
-## Submission-ready availability wording after v0.8.0 archiving
+## Submission-ready availability wording
 
-Replace `[V0.8.0 DOI]` only after the DOI resolves publicly:
-
-> This study reused CycPeptMPDB v1.2 PAMPA records from the database download page (http://cycpeptmpdb.com/download/), as described in the source publication (https://doi.org/10.1021/acs.jcim.2c01573). The exact 7,298-row input had SHA-256 02da1cfc18a92b3ae6e70152445b23c05ce6bb0b6ed10fc7c9e141fbd9462fde. The authors do not redistribute upstream structures or permeability labels because a separate redistribution licence was not identified. The release-safe archive provides deterministic reconstruction instructions, curation and split manifests, aggregate analysis outputs, figure source data, reporting code, provenance records and file-level checksums at https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation and https://doi.org/[V0.8.0 DOI].
+> This study reused CycPeptMPDB v1.2 PAMPA records from the database download page (http://cycpeptmpdb.com/download/), as described in the source publication (https://doi.org/10.1021/acs.jcim.2c01573). The exact 7,298-row input had SHA-256 02da1cfc18a92b3ae6e70152445b23c05ce6bb0b6ed10fc7c9e141fbd9462fde. The authors do not redistribute upstream structures or permeability labels because a separate redistribution licence was not identified. The release-safe archive provides deterministic reconstruction instructions, curation and split manifests, aggregate analysis outputs, figure source data, reporting code, provenance records and file-level checksums at https://github.com/schwarzeteeguo-creator/scaffoldseal-cp-evaluation and https://doi.org/10.5281/zenodo.22732455.
 
 If the upstream licence is later confirmed to permit redistribution, document the exact licence and source version before adding any row-level material.
